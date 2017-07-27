@@ -33,25 +33,45 @@ block content
         .twelve.columns
         h2 Example Projects
       .row
-        each example in partner.EXAMPLES
+        //- create example rows o 3 each
+        -
+          var exampleRows = []
+          for (var i=0, l=partner.EXAMPLES.length; i<l; i+=3) {
+            exampleRows.push([ partner.EXAMPLES[i], partner.EXAMPLES[i+1], partner.EXAMPLES[i+2] ])
+          }
+
+        //- Mixin (html template for partner list)
+        mixin example(example)
           .four.columns.example
-            .image
-              a(href=example.URL)
-                img(src=example.IMAGE)
-                .play-button
-            if example.TITLE
-              h3=example.TITLE
-            if example.DESCRIPTION
-              p!=example.DESCRIPTION
-            if example.PRICE
-              -
-                var orderLink = `mailto:${partner.EMAIL}` + encodeURI(`?subject=Offer Request&body=Hi
+            .partner
+              .image
+                a(href=example.URL)
+                  img(src=example.IMAGE)
+                  .play-button
+              if example.TITLE
+                h3=example.TITLE
+              if example.DESCRIPTION
+                p!=example.DESCRIPTION
+              if example.PRICE
+                -
+                  var orderLink = `mailto:${partner.EMAIL}` + encodeURI(`?subject=Offer Request&body=Hi
 
-                I'm interested in an offer for a project similar to "${example.TITLE}" (Pricing starting at $ ${example.PRICE}).
+                  I'm interested in an offer for a project similar to "${example.TITLE}" (Pricing starting at $ ${example.PRICE}).
 
-                Best wishes`)
-              a(href=orderLink)
-                .order Order for $ #{example.PRICE}+
+                  Best wishes`)
+                a(href=orderLink)
+                  .order Order for $ #{example.PRICE}+
+
+        //- print rows of 3 examples
+        each e in exampleRows
+          .row
+            if e[0]
+              +example(e[0])
+            if e[1]
+              +example(e[1])
+            if e[2]
+              +example(e[2])
+
 
   #additional-content.container
     .row
