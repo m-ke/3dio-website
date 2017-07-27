@@ -4,7 +4,7 @@ TAGLINE: Handcrafted highly realistic 3D Models on Archilogic
 DESCRIPTION: As a Webdesigner and a Front-end developer, Aurélien Martel specialises in online Virtual Reality architectural renderings.
 LOGO: https://storage.3d.io/535e624259ee6b0200000484/2017-04-24_16-04-31_SZouBr/logo-am-rond.png
 LOGO_BG_COLOR: '#ddd'
-IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-04-24_16-02-22_RI1Z1Y/Elliot_s_Apartment_-_Mr_Robot_by_Aurelien_Martel_2017-04-24.jpg
+IMAGE:
 URL: http://aurelienmartel3d.com/partners/archilogic/
 EMAIL: aurelien_martel@yahoo.fr
 COUNTRY: France
