@@ -13,7 +13,8 @@ block content
         p Certifier Partner of 3d.io
         .logo-container
           .bg(style=`background: ${partner.LOGO_BG_COLOR};`)
-          .logo(style=`background-image: url('${partner.LOGO}');`)
+          - var m = partner.LOGO_SIZE ? ((100 - parseFloat(partner.LOGO_SIZE)) / 2) : 8
+          .logo(style=`background-image: url('${partner.LOGO}');top:${m}%;right:${m}%;bottom:${m}%;left:${m}%;`)
         h1=partner.NAME
         if partner.TAGLINE
           h3!=partner.TAGLINE
