@@ -14,10 +14,10 @@ EXAMPLES:
       DESCRIPTION: 'This 3D model represents the apartment of Mr. Robot series character: Elliot Alderson.'
       IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-07-27_11-21-22_27sLl4/Mr.Robot_320_160.jpg
       URL: https://goo.gl/i1QhJx
-      PRICE:
+      PRICE: 1500
     - TITLE: Sherlock 
       DESCRIPTION: Inspired by the BBC series Sherlock, this 3D model casts a light on how the house of the famous detective Sherlock Holmes could look like in the present day.
       IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-07-27_11-42-14_eWAQaA/Sherlock_Holmes_320_160.jpg
       URL: https://goo.gl/KQ3Syu
-      PRICE:
+      PRICE: 1500
 </script>
