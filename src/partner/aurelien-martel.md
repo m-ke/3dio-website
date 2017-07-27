@@ -1,8 +1,9 @@
 <script id="partner-info" type="application/x-yaml">
-NAME: Aurélien Martel 3D
+NAME: Aurélien Martel
 TAGLINE: Handcrafted highly realistic 3D Models on Archilogic
 DESCRIPTION: As a Webdesigner and a Front-end developer, Aurélien Martel specialises in online Virtual Reality architectural renderings.
 LOGO: https://storage.3d.io/535e624259ee6b0200000484/2017-04-24_16-04-31_SZouBr/logo-am-rond.png
+LOGO_SIZE: 70 #percent
 LOGO_BG_COLOR: '#ddd'
 IMAGE:
 URL: http://aurelienmartel3d.com/partners/archilogic/
