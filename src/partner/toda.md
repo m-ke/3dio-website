@@ -1,6 +1,6 @@
 <script id="partner-info" type="application/x-yaml">
 NAME: TODA
-TAGLINE: 3D Renderings and custom Modeling
+TAGLINE: 3D Renderings and Custom Modeling
 DESCRIPTION: TODA team specialises in building immersive content for agencies and brands creating Unity3D applications, VR HTC Vive and Oculus, Renderings and Animations in one place-faster and better, making great interactive solutions, advertising and visual executions a reality.
 LOGO: https://storage.3d.io/535e624259ee6b0200000484/2017-07-27_13-16-32_tS5xGN/todagroup.png
 LOGO_BG_COLOR: '#ddd'
