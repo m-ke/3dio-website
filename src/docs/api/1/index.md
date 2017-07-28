@@ -3,19 +3,17 @@
 Expect changes: APIs are in first public beta release state.
 
 ## Product APIs
-* App Creator
 * [A-Frame Components](docs/api/1/aframe-components.md)
-* [Editor](https://docs.archilogic.com)
-* [Home Staging AI](docs/api/1/home-staging-ai.md)
+* [Storage](docs/api/1/storage.html)
+* [Furniture Library](docs/api/1/furniture-library.html)
+* Home Staging AI
 * Floor Plan to 3D conversion
 * Import / Publishing
 * Export
 * Matterport Import
-* [Storage](docs/api/1/storage.html)
-* [Furniture Library](docs/api/1/furniture-library.html)
-* [Scene Library](docs/api/1/scene-library.html)
+* Scene Library
 * Material Library
-* [Lightmap Baking](docs/api/1/lightmap-baking.html)
+* Lightmap Baking
 * Modifiers
 
 ## Complementary APIs
