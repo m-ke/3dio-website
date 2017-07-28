@@ -153,7 +153,7 @@ function generatePartnerProfilePages () {
         githubLink: getGithubEditLink(inputFile)
       })
       // remap relative links and markdown links
-      html = remapLinks(html)
+      html = remapLinks(html, inputFile)
       // create vinyl object for output
       const outputFile = new Vinyl({
         cwd: inputFile.cwd, base: inputFile.base,
