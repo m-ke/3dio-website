@@ -19,7 +19,7 @@ Expect changes: APIs are in first public beta release state.
 * Modifiers
 
 ## Complementary APIs
-* Authentication
+* [Authentication](docs/api/1/authentication.html)
 * Utils
 
 ## Distribution
