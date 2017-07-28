@@ -116,7 +116,7 @@
     "category": "content",
     "description": null,
     "app": {
-      "url": null
+      "url": "https://3d.io/use-case/virtually-staged-3d-scan.html"
     },
     "api": {
       "name": "matterport",
