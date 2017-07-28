@@ -88,7 +88,7 @@ block content
             h4= p.title
             .badges
               if p.app.url
-                a(href=p.app.url, target='_blank').app App
+                a(href=p.app.url).app App
               if p.api.url
                 a(href=p.api.url).api API
               if !p.app.url && !p.api.url
@@ -101,7 +101,7 @@ block content
     .row
       .seven.columns
         p Building blocks doing one thing at a time an do it well, not a framework but libs and services you can freely combine and mix with other stuff.
-        p(style='margin-bottom:0px;') <a href="docs/api/1/index.md"> API Reference</a> | <a href="technology.md">Our Tech Philosophy</a>
+        p(style='margin-bottom:0px;') <a href="docs/api/1/"> API Reference</a> | <a href="technology.md">Our Tech Philosophy</a>
     .row.list
       .four.columns
         h2 Build Experiences:

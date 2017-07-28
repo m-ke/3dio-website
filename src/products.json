@@ -10,7 +10,7 @@
     },
     "api": {
       "name": "aFrame",
-      "url": "http://3d.io/docs/api/1/aframe-components.html",
+      "url": "https://3d.io/docs/api/1/aframe-components.html",
       "methods": {}
     }
   },{
@@ -19,7 +19,7 @@
     "category": "experiences",
     "description": null,
     "app": {
-      "url": "http://appcreator.3d.io"
+      "url": "https://appcreator.3d.io"
     },
     "api": {
       "name": "appCreator",
