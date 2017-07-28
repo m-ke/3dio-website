@@ -284,7 +284,14 @@ function parsePartnerInfo (str, path) {
   // placeholders
   if (!info.LOGO) info.LOGO = 'https://archilogic-com.github.io/ui-style-guide/certified-partner/archilogic-partner-badge-pyramid-gradient.svg'
   if (!info.LOGO_BG_COLOR) info.LOGO_BG_COLOR = '#ddd'
-  if (!info.SAMPLES) info.SAMPLES = []
+  info.LOGO_SIZE = info.LOGO_SIZE ? parseFloat(info.LOGO_SIZE) : 84
+  if (info.SAMPLES) {
+    info.SAMPLES.forEach(function(sample){
+      sample.PRICE = sample.PRICE ? parseFloat(sample.PRICE) : undefined
+    })
+  } else {
+    info.SAMPLES = []
+  }
   return info
 }
 
