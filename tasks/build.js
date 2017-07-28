@@ -284,6 +284,7 @@ function parsePartnerInfo (str, path) {
   // placeholders
   if (!info.LOGO) info.LOGO = 'https://archilogic-com.github.io/ui-style-guide/certified-partner/archilogic-partner-badge-pyramid-gradient.svg'
   if (!info.LOGO_BG_COLOR) info.LOGO_BG_COLOR = '#ddd'
+  if (!info.SAMPLES) info.SAMPLES = []
   return info
 }
 

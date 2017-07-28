@@ -27,50 +27,50 @@ block content
         if partner.IMAGE
           img(src=partner.IMAGE).image
 
-  if partner.EXAMPLES
-    #examples.container
+  if partner.SAMPLES
+    #samples.container
       .row
         .twelve.columns
         h2 Sample Projects
       .row
-        //- create example rows o 3 each
+        //- create sample rows o 3 each
         -
           var exampleRows = []
-          for (var i=0, l=partner.EXAMPLES.length; i<l; i+=3) {
-            exampleRows.push([ partner.EXAMPLES[i], partner.EXAMPLES[i+1], partner.EXAMPLES[i+2] ])
+          for (var i=0, l=partner.SAMPLES.length; i<l; i+=3) {
+            exampleRows.push([ partner.SAMPLES[i], partner.SAMPLES[i+1], partner.SAMPLES[i+2] ])
           }
 
         //- Mixin (html template for partner list)
-        mixin example(example)
-          .four.columns.example
+        mixin sample(sample)
+          .four.columns.sample
             .partner
               .image
-                a(href=example.URL)
-                  img(src=example.IMAGE)
+                a(href=sample.URL)
+                  img(src=sample.IMAGE)
                   .play-button
-              if example.TITLE
-                h3=example.TITLE
-              if example.DESCRIPTION
-                p!=example.DESCRIPTION
-              if example.PRICE
+              if sample.TITLE
+                h3=sample.TITLE
+              if sample.DESCRIPTION
+                p!=sample.DESCRIPTION
+              if sample.PRICE
                 -
                   var orderLink = `mailto:${partner.EMAIL}` + encodeURI(`?subject=Offer Request&body=Hi
 
-                  I'm interested in an offer for a project similar to "${example.TITLE}" (Pricing starting at $ ${example.PRICE}).
+                  I'm interested in an offer for a project similar to "${sample.TITLE}" (Pricing starting at $ ${sample.PRICE}).
 
                   Best wishes`)
                 a(href=orderLink)
-                  .order Order for $ #{example.PRICE}+
+                  .order Order for $ #{sample.PRICE}+
 
         //- print rows of 3 examples
         each e in exampleRows
           .row
             if e[0]
-              +example(e[0])
+              +sample(e[0])
             if e[1]
-              +example(e[1])
+              +sample(e[1])
             if e[2]
-              +example(e[2])
+              +sample(e[2])
 
 
   #additional-content.container

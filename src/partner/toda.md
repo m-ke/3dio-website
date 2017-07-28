@@ -10,7 +10,7 @@ URL: http://todagroup.com/archilogic.php
 EMAIL: orestk@gmail.com
 COUNTRY: Ukraine
 CITY:
-EXAMPLES:
+SAMPLES:
     - TITLE: The Office
       DESCRIPTION: Highly detailed representation of the workspace featured in the US TV show the Office
       IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-07-27_09-02-36_jznzzr/The_Office_Email_320_160.jpg

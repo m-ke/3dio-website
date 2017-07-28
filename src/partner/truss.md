@@ -10,7 +10,7 @@ URL:
 EMAIL: jovanswork@gmail.com
 COUNTRY: Serbia
 CITY:
-EXAMPLES:
+SAMPLES:
     - TITLE: Handcrafted Apartment
       DESCRIPTION: The client is active in refurbishing of "Jugenstil"-style apartments in Germany. In order to market those to prospective buyers we developed a visual template before creating a large number of 3D models reflecting this style.
       IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-07-25_20-11-16_4HpgEN/apart.jpg
