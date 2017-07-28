@@ -26,7 +26,6 @@ The `searchQuery` object looks like this with all fields being optional:
 The following snippet lists the first 50 furniture pieces:
 
 ```javascript
-  var IO3D = require('3d.io')
   IO3D.furniture.search().then(console.log)
 ```
 <!--
@@ -54,7 +53,6 @@ API key: **not required**
 The following snippet reads a single product with the ID `abc123`:
 
 ```javascript
-  var IO3D = require('3d.io')
   IO3D.furniture.get('abc123').then(console.log)
 ```
 <!--
