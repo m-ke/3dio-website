@@ -24,11 +24,11 @@ This can easily be done with these components:
 
 | Parameter | Description |
 | --- | --- |
-| `key` | Specifies a 3d.io [storage key](/docs/api/1/storage.md) to identify 3d data to display, e.g. `/3f995099-d624-4c8e-ab6b-1fd5e3799173/170515-0913-4p3ktf/1e588a3b-90ac-4a32-b5b8-ff2fda7f87c4.gz.data3d.buffer` |
+| `key` | Specifies a 3d.io [storage key](storage.md) to identify 3d data to display, e.g. `/3f995099-d624-4c8e-ab6b-1fd5e3799173/170515-0913-4p3ktf/1e588a3b-90ac-4a32-b5b8-ff2fda7f87c4.gz.data3d.buffer` |
 | `url` | Specifies a URL of a `.data3d.json` or `.data3d.buffer` file, e.g. `https://storage.3d.io/3f995099-d624-4c8e-ab6b-1fd5e3799173/170515-0913-4p3ktf/1e588a3b-90ac-4a32-b5b8-ff2fda7f87c4.gz.data3d.buffer` |
 
 ## Displaying furniture with `io3d-furniture`
 
 | Parameter | Description |
 | --- | --- |
-| `id` | The `productResourceId` of the desired furniture piece from the [furniture library](/docs/api/1/furniture-library.md) |
+| `id` | The `productResourceId` of the desired furniture piece from the [furniture library](furniture-library.md) |

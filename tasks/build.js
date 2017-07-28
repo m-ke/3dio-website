@@ -100,7 +100,7 @@ function renderPug () {
     // pug renderer wraps code tags into pre tegs. we dont want that
     html = html.replace(/<pre>[\n\s]*<code/gmi, '<code').replace(/<\/code>[\n\s]*<\/pre>/gmi, '</code>')
     // remap relative links and markdown links
-    html = remapLinks(html)
+    html = remapLinks(html, inputFile)
     // create vinyl object for output
     const outputFile = new Vinyl({
       cwd: inputFile.cwd, base: inputFile.base,
@@ -118,8 +118,6 @@ function renderMarkdown () {
     if (!inputFile.isBuffer()) return
     // decode text from vinyl object
     const markdownText = inputFile.contents.toString(enc)
-    const urlPath = urlPathRoot+'/'+inputFile.path.substr(inputFile.base.length)
-    const urlPathDir = path.dirname(urlPath)+'/'
     // convert markdown to html
     marked(markdownText, (err, content) => {
       if (err) return cb(err)
@@ -138,7 +136,7 @@ function renderMarkdown () {
       // pug renderer wraps code tags into pre tegs. we dont want that
       html = html.replace(/<pre>[\n\s]*<code/gmi, '<code').replace(/<\/code>[\n\s]*<\/pre>/gmi, '</code>')
       // remap relative links and markdown links
-      html = remapLinks(html)
+      html = remapLinks(html, inputFile)
       // create vinyl object for output
       const outputFile = new Vinyl({
         cwd: inputFile.cwd, base: inputFile.base,
@@ -164,15 +162,32 @@ function renderLess () {
 
 const aTagInHtmlRegex = /\<a *[^\/>]*href="([^"]*|\\")*"*[^\/>]*\>/gi
 const mdExtensionInUrlRegex = /(\.md)/gi
-function remapLinks (html) {
+function remapLinks (html, inputFile) {
+  const urlPath = urlPathRoot+'/'+inputFile.path.substr(inputFile.base.length)
+  const urlPathDir = (path.dirname(urlPath)+'/').replace('//','/')
   return html.replace(aTagInHtmlRegex, function (tag, url) {
-    // replace relative URLs only
-    if (!url || url.substr(0, 4) === 'http' || url.substr(0, 7) === 'mailto:') {
+    if (!url || url.substr(0, 7) === 'mailto:') {
+      // don't modife empty href tag and email links
       return tag
+    } else if (url.substr(0, 4) === 'http') {
+      // open all external pages in new tab
+      if (
+        url.substr(0, 12) === 'http://3d.io'
+        || url.substr(0, 13) === 'https://3d.io'
+        || tag.indexOf('target=') > -1
+      ) {
+        // refers to 3d.io or has target attribute set
+        return tag
+      } else {
+        // add target attribute
+        return tag.replace('<a ', '<a target="_blank" ')
+      }
     } else {
+      // add root path to relative pages
       return tag.replace(
         url,
-        urlPathRoot + (url[0] === '/' ? url : '/' + url)
+        url[0] === '/' ? urlPathRoot + url : urlPathDir + url
+      // replace .md extensions by .html
       ).replace(
         mdExtensionInUrlRegex,
         '.html'
