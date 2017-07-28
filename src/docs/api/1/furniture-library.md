@@ -50,10 +50,10 @@ API key: **not required**
 | --- | --- | --- |
 | `productResourceId` | Yes | The ID of the product to retrieve. |
 
-The following snippet reads a single product with the ID `abc123`:
+The following snippet reads a single product with the ID `943357e8-911f-4bb5-8b89-8281385ef08f`:
 
 ```javascript
-  IO3D.furniture.get('abc123').then(console.log)
+  IO3D.furniture.get('943357e8-911f-4bb5-8b89-8281385ef08f').then(console.log)
 ```
 <!--
 ```bash
@@ -62,7 +62,7 @@ The following snippet reads a single product with the ID `abc123`:
     "id": "some-random-id", \
     "method": "Product.read", \
     "params": { \
-      "productResourceId": "abc123"
+      "productResourceId": "943357e8-911f-4bb5-8b89-8281385ef08f"
     } \
   }'
 ```
