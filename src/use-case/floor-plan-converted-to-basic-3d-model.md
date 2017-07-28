@@ -1,8 +1,8 @@
 # Basic 3D Model from Floor Plan
 
-3d.io converts 2D floor plans into beatiful interactive 3D models with ease. We offer two quality standards:
-* **Basic 3D Model** provided by 3d.io 
-* **Professional 3D Model** provided by [certified partners](/floor-plan-to-3d-conversion.md)
+3d.io converts 2D floor plans into beatiful interactive 3D models with ease. We offer [two quality standards](/floor-plan-to-3d-conversion.md):
+* **Basic 3D Models** provided by 3d.io 
+* **Professional 3D Models** provided by [certified partners](/partners.html)
 
 This page explains the process of creating a basic 3D model which is fully editable and can be upgraded to a [professional 3d model](/floor-plan-to-3d-conversion.md) later.
 
