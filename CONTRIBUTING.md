@@ -2,7 +2,7 @@
 
 ## Question or Problem?
 
-If you have a question on how to use 3D.io or the products, please direct these to [Stack Overflow](https://stackoverflow.com/questions/tagged/aframe%20and%203dio%20or%20archilogic). It's the best way to reach us.
+If you have a question on how to use 3D.io or the products, please direct these to [Stack Overflow](https://stackoverflow.com/questions/tagged/aframe%20and%203d.io%20or%20archilogic). It's the best way to reach us.
 
 In case you find something that is a bug, read on :-)
 
@@ -47,3 +47,4 @@ For major changes we'd love to discuss the proposed changes as a Github issue in
   * Avoid template like placeholders (i.e. "/<your-folder>/index.html")
 * Isomorphic code should be presented in generic examples.
 * Examples for specific environments should be declared as such explicitely.
+* Distinguish secret from public keys and always explicitely declare them as such.

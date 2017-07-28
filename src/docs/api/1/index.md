@@ -3,7 +3,7 @@
 Expect changes: APIs are in first public beta release state.
 
 ## Product APIs
-* [A-Frame Components](docs/api/1/aframe-components.md)
+* [A-Frame Components](aframe-components.md)
 * [Storage](storage.md)
 * [Furniture Library](furniture-library.md)
 * Home Staging AI
@@ -17,7 +17,7 @@ Expect changes: APIs are in first public beta release state.
 * Modifiers
 
 ## Complementary APIs
-* [Authentication](authentication.html)
+* [Authentication](authentication.md)
 * Utils
 
 ## Distribution
