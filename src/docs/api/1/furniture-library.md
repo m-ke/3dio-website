@@ -26,8 +26,7 @@ The `searchQuery` object looks like this with all fields being optional:
 The following snippet lists the first 50 furniture pieces:
 
 ```javascript
-  var io3d = require('3d.io')
-  io3d.furniture.search().then(console.log)
+  IO3D.furniture.search().then(console.log)
 ```
 <!--
 ```bash
@@ -51,11 +50,10 @@ API key: **not required**
 | --- | --- | --- |
 | `productResourceId` | Yes | The ID of the product to retrieve. |
 
-The following snippet reads a single product with the ID `abc123`:
+The following snippet reads a single product with the ID `943357e8-911f-4bb5-8b89-8281385ef08f`:
 
 ```javascript
-  var io3d = require('3d.io')
-  io3d.furniture.get('abc123').then(console.log)
+  IO3D.furniture.get('943357e8-911f-4bb5-8b89-8281385ef08f').then(console.log)
 ```
 <!--
 ```bash
@@ -64,7 +62,7 @@ The following snippet reads a single product with the ID `abc123`:
     "id": "some-random-id", \
     "method": "Product.read", \
     "params": { \
-      "productResourceId": "abc123"
+      "productResourceId": "943357e8-911f-4bb5-8b89-8281385ef08f"
     } \
   }'
 ```

@@ -13,8 +13,8 @@ const isMaster = gitBranchName === 'master'
 // configs
 
 // TODO: increase cdn max age to 1 day once content becomes more stable (See issue #16)
-// branches deployments should always be max-age 0
-const cdnMaxAge = !isMaster ? 0 : 60 * 10 // = 10 minutes
+// !! branches deployments should always be max-age 0
+const cdnMaxAge = !isMaster ? 0 : 60 * 5 // = 5 minutes
 const debug = false
 const AWS = {
   bucket: '3d.io',
