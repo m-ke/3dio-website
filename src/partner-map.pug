@@ -53,6 +53,7 @@ block content
         scrollwheel: false,
         streetViewControl: false,
         zoom: 2,
+        maxZoom: 6,
         center: new google.maps.LatLng(23, 18),
         styles: styles
       })
@@ -67,7 +68,7 @@ block content
           width: '100px',
           alignBottom: true,
           disableAutoPan: true,
-          pixelOffset: new google.maps.Size(-40, -18),
+          pixelOffset: new google.maps.Size(-40, -32),
           position: new google.maps.LatLng(partner.lat, partner.lng),
           closeBoxURL: '',
           isHidden: false,
@@ -82,7 +83,7 @@ block content
             url: 'img/map-marker-partner.png',
             scaledSize: new google.maps.Size(24, 28),
             origin: new google.maps.Point(0, 0),
-            anchor: new google.maps.Point(12, 14),
+            anchor: new google.maps.Point(12, 28),
             optimized: false
           }
         })
