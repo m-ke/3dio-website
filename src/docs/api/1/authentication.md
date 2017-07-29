@@ -1,6 +1,6 @@
 # Authentication
 
-## Log in
+## Logging a user in to access their content
 
 API Key: **not required**
 
