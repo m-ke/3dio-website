@@ -1,3 +1,5 @@
+@import "common/configs.less";
+
 #content {
     padding-bottom: 2em;
 }
@@ -24,4 +26,11 @@
     color: white;
     padding: 8px 4px 8px 4px;
     border-radius: 2px;
+}
+
+.full-width-on-mobile {
+    @media (max-width: @screenIpad) {
+        margin: 0;
+        width: 100%;
+    }
 }
