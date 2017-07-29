@@ -4,8 +4,17 @@ extends pug-common/main.pug
 block head
   link(href=urlPathRoot+'/css/md-wrapper.css', rel='stylesheet')
   link(href=urlPathRoot+'/css/partner-map-page.css', rel='stylesheet')
-  script(async defer src='https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDTggTEc-TJOgiCrrO1xDLZtusrtPzZb4A')
-  script(src=urlPathRoot+'/js/google-maps-infobox-wrapped.js')
+
+block content
+  #intro.container
+    .row
+      .twelve.columns
+        h2 Certified Partners Worl Wide
+
+  .container
+    .row
+      .twelve.columns
+        #map
 
   //- script running during build
   -
@@ -259,14 +268,5 @@ block head
         ]
       }
     ]
-
-block content
-  #intro.container
-    .row
-      .twelve.columns
-        h2 Certified Partners Worl Wide
-
-  .container
-    .row
-      .twelve.columns
-        #map
+  script(async defer src='https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDTggTEc-TJOgiCrrO1xDLZtusrtPzZb4A')
+  script(src=urlPathRoot + '/js/google-maps-infobox-wrapped.js')
