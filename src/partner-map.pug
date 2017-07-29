@@ -34,6 +34,7 @@ block content
     var injectPartnersJson = JSON.stringify(injectPartners)
 
   //- script running in browser
+  script(src=urlPathRoot + '/js/google-maps-infobox-wrapped.js')
   script.
 
     // configs
@@ -270,4 +271,3 @@ block content
       }
     ]
   script(async defer src='https://maps.googleapis.com/maps/api/js?callback=initMap&key=AIzaSyDTggTEc-TJOgiCrrO1xDLZtusrtPzZb4A')
-  script(src=urlPathRoot + '/js/google-maps-infobox-wrapped.js')
