@@ -9,7 +9,9 @@ IMAGE:
 URL:
 EMAIL: jovanswork@gmail.com
 COUNTRY: Serbia
-CITY:
+CITY: Belgrade
+LOCATION_LAT: 44.787197
+LOCATION_LNG: 20.457273
 SAMPLES:
     - TITLE: Handcrafted Apartment
       DESCRIPTION: The client is active in refurbishing of "Jugenstil"-style apartments in Germany. In order to market those to prospective buyers we developed a visual template before creating a large number of 3D models reflecting this style.

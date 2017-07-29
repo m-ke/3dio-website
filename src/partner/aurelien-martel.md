@@ -9,7 +9,9 @@ IMAGE:
 URL: http://aurelienmartel3d.com/partners/archilogic/
 EMAIL: aurelien_martel@yahoo.fr
 COUNTRY: France
-CITY:
+CITY: Paris
+LOCATION_LAT: 48.864716
+LOCATION_LNG: 2.349014
 SAMPLES:
     - TITLE: Mr. Robot
       DESCRIPTION: 'This 3D model represents the apartment of Mr. Robot series character: Elliot Alderson.'

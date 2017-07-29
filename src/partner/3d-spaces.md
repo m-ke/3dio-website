@@ -9,7 +9,9 @@ IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-04-12_07-50-45_3Y00jh
 URL: https://www.3dspaces.com.au/viznavigator-archilogic/
 EMAIL: contact@3dspaces.com.au
 COUNTRY: Australia
-CITY:
+CITY: Sydney
+LOCATION_LAT: -33.865143
+LOCATION_LNG: 151.209900
 SAMPLES:
     - TITLE: Interactive off-the-plan residential development
       DESCRIPTION: Project for 5 level, 27 unit off-the-plan residential development in Kedron, Brisbane, Australia. The goal was to give interested buyers a full picture of the available apartment units using renderings and interactive 3D models.

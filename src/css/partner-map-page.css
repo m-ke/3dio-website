@@ -1,0 +1,23 @@
+#content {
+    padding-bottom: 2em;
+}
+
+
+#intro {
+    text-align: center;
+}
+
+#map {
+    height: 440px;
+    margin: 1em 0 0 0;
+}
+
+.map-info {
+    width: 80px;
+    background-color: rgba(0,0,0,0.9);
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    padding: 8px 2px 8px 2px;
+    border-radius: 2px;
+}

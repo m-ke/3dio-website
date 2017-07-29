@@ -307,6 +307,8 @@ function parsePartnerInfo (str, path) {
   } else {
     info.SAMPLES = []
   }
+  info.LOCATION_LAT = info.LOCATION_LAT ? parseFloat(info.LOCATION_LAT) : undefined
+  info.LOCATION_LNG = info.LOCATION_LNG ? parseFloat(info.LOCATION_LNG) : undefined
   return info
 }
 
