@@ -27,19 +27,19 @@ script.
   var $user = $('#user')
 
   var $nonAuthenticated = $('<span>').hide().appendTo($user)
-  var $logIn = $('<a>', {
-    text: 'Log In',
-    click: function(){
-      io3d.ui.logIn().then(function(session){
+  var $signUp = $('<a>', {
+    text: 'Sign Up',
+    click: function () {
+      io3d.ui.signUp().then(function (session) {
         io3d.ui.message.success('Welcome!')
       })
     }
   }).appendTo($nonAuthenticated)
   $('<div>', { class:'spacer' }).appendTo($nonAuthenticated)
-  var $signUp = $('<a>', {
-    text: 'Sign Up',
-    click: function(){
-      io3d.ui.signUp().then(function (session) {
+  var $logIn = $('<a>', {
+    text: 'Log In',
+    click: function () {
+      io3d.ui.logIn().then(function (session) {
         io3d.ui.message.success('Welcome!')
       })
     }
