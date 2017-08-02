@@ -36,7 +36,7 @@ https://storage-nocdn.3d.io/535e624259ee6b0200000484/example/floorplan.jpg
 var file = new Blob(['Hello World'])
 file.name = 'hello.txt'
 
-IO3D.storage.put(file).then(function (key) {
+io3d.storage.put(file).then(function (key) {
   console.log('Your new file key is:', key)
 })
 ```
@@ -49,7 +49,7 @@ file1.name = 'my-filename.txt'
 var file2 = new Blob(['Howdy Partner'])
 file2.name = 'another-filename.txt'
 
-IO3D.storage.put([file1, file2]).then(function (keys) {
+io3d.storage.put([file1, file2]).then(function (keys) {
   console.log('Done. File keys are:', keys)
 })
 ```
@@ -58,12 +58,12 @@ IO3D.storage.put([file1, file2]).then(function (keys) {
 ```javascript
 var file = new Blob(['Hello World'])
 
-// uploading a file to specific location requires login 
-IO3D.auth.login({
+// uploading a file to specific location requires login
+io3d.auth.login({
   username: 'your-username-here',
   password: 'your-password-here'
 }).then(function (session) {
-  return IO3D.storage.put(file, {
+  return io3d.storage.put(file, {
     key: '/' + session.user.id + '/my-folder-name/my-file-name.txt'
   })
 }).then(function (key) {
@@ -75,7 +75,7 @@ IO3D.auth.login({
 ```javascript
 var file = new Blob(['Hello World'])
 
-IO3D.storage.put(file, {
+io3d.storage.put(file, {
   // {{userId}} will get replaced internally by the currently logged-in
   // user id. Not being logged-in will result in the promise being rejected.
   key: '/{{userId}}/my-folder-name/my-file-name.txt'
@@ -93,7 +93,7 @@ file1.name = 'my-filename.txt'
 var file2 = new Blob(['Howdy Partner'])
 file2.name = 'another-filename.txt'
 
-IO3D.storage.put(files, {
+io3d.storage.put(files, {
   // {{userId}} will get replaced internally by the currently logged-in
   // user id. Not being logged-in will result in the promise being rejected.
   dir: '/{{userId}}/my-folder-name/'

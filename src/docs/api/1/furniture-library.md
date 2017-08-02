@@ -26,7 +26,7 @@ The `searchQuery` object looks like this with all fields being optional:
 The following snippet lists the first 50 furniture pieces:
 
 ```javascript
-  IO3D.furniture.search().then(console.log)
+  io3d.furniture.search().then(console.log)
 ```
 <!--
 ```bash
@@ -53,7 +53,7 @@ API key: **not required**
 The following snippet reads a single product with the ID `943357e8-911f-4bb5-8b89-8281385ef08f`:
 
 ```javascript
-  IO3D.furniture.get('943357e8-911f-4bb5-8b89-8281385ef08f').then(console.log)
+  io3d.furniture.get('943357e8-911f-4bb5-8b89-8281385ef08f').then(console.log)
 ```
 <!--
 ```bash
