@@ -22,6 +22,50 @@
     a(href='https://stackoverflow.com/questions/tagged/aframe%20and%203d.io%20or%20archilogic') Support
 
   #user
-    a(href='https://spaces.archilogic.com/explore?popup=login') Login
-    .spacer
-    a(href='https://spaces.archilogic.com/signup') Sign Up
+
+script.
+  var $user = $('#user')
+
+  var $nonAuthenticated = $('<span>').hide().appendTo($user)
+  var $signUp = $('<a>', {
+    text: 'Sign Up',
+    click: function () {
+      io3d.ui.signUp().then(function (session) {
+        io3d.ui.message.success('Welcome!')
+      })
+    }
+  }).appendTo($nonAuthenticated)
+  $('<div>', { class:'spacer' }).appendTo($nonAuthenticated)
+  var $logIn = $('<a>', {
+    text: 'Log In',
+    click: function () {
+      io3d.ui.logIn().then(function (session) {
+        io3d.ui.message.success('Welcome!')
+      })
+    }
+  }).appendTo($nonAuthenticated)
+
+  var $authenticated = $('<span>').hide().appendTo($user)
+  var $logIn = $('<a>', {
+    text: 'Dev Dashboard',
+    click: io3d.ui.devDashboard
+  }).appendTo($authenticated)
+  $('<div>', {class: 'spacer'}).appendTo($authenticated)
+  var $signUp = $('<a>', {
+    text: 'Log Out',
+    click: function () {
+      io3d.auth.logOut().then(function (session) {
+        io3d.ui.message('See you later')
+      })
+    }
+  }).appendTo($authenticated)
+
+  io3d.auth.session$.subscribe(function (session) {
+    if (session.isAuthenticated) {
+      $nonAuthenticated.hide()
+      $authenticated.show()
+    } else {
+      $nonAuthenticated.show()
+      $authenticated.hide()
+    }
+  })

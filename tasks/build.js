@@ -221,8 +221,8 @@ function remapLinks (html, inputFile) {
   const urlPath = urlPathRoot+'/'+inputFile.path.substr(inputFile.base.length)
   const urlPathDir = (path.dirname(urlPath)+'/').replace('//','/')
   return html.replace(aTagInHtmlRegex, function (tag, url) {
-    if (!url || url.substr(0, 7) === 'mailto:') {
-      // don't modife empty href tag and email links
+    if (!url || url.substr(0, 7) === 'mailto:' || url.substr(0, 11) === 'javascript:') {
+      // don't modife empty href tags, email, javascript links
       return tag
     } else if (url.substr(0, 4) === 'http') {
       // open all external pages in new tab
