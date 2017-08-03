@@ -38,7 +38,7 @@ Both influence how the [precalculated lights](https://spaces.archilogic.com/blog
 The exposure can be used to over- or underexpose the scene while the intensity allows to adjust how much the light blends with the materials.
 
 The relation of the two settings is visualised below:
-![Intensity and exposure of the lightmap visualised](/img/docs/aframe-io3d-data3d-lightmap-settings.png)
+![Intensity and exposure of the lightmap visualised](../../../img/docs/aframe-io3d-data3d-lightmap-settings.png)
 
 ## Displaying furniture with `io3d-furniture`
 
@@ -73,7 +73,7 @@ There are three ways of changing and accessing materials:
 2. Find the `io3d-furniture` component in the properties panel on the right
 3. If more than one material is available, the available material options will appear in the panel
 
-![](/img/docs/aframe-io3d-furniture-materials-inspector.png)
+![](../../../img/docs/aframe-io3d-furniture-materials-inspector.png)
 
 #### Using HTML
 
