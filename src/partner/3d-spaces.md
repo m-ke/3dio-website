@@ -1,4 +1,5 @@
 <script id="partner-info" type="application/x-yaml">
+PUBLISH: FALSE
 NAME: 3D Spaces
 TAGLINE: Visual Interactive Real Estate Marketing
 DESCRIPTION: Visual interactive navigation for real estate. Include all your Archilogic models and other rich media into one interactive navigational experience.

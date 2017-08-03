@@ -134,6 +134,8 @@ function generatePartnerProfilePages () {
     getAllPartnerInfo()
     // get partner info
     const partner = parsePartnerInfo(markdownText, inputFile.path)
+    // exit if file is not meant to be published
+    if (!partner.PUBLISH) return cb()
     // remove partner-info tag from markdown
     markdownText = removePartnerInfo(markdownText)
     // convert markdown to html
@@ -272,7 +274,7 @@ function getAllPartnerInfo () {
     if (file === 'apply.md') return
     const info = parsePartnerInfo(fs.readFileSync(dir+'/'+file), file)
     info.filename = file
-    partners.push(info)
+    if (info.PUBLISH) partners.push(info)
   })
   return partners
 }
@@ -305,6 +307,8 @@ function parsePartnerInfo (str, path) {
   } catch (e) {
     throw `Parsing error in page "${path}". YAML specs: http://yaml.org/spec/\n${e}`
   }
+  // publish it?
+  info.PUBLISH = info.PUBLISH !== undefined ? info.PUBLISH : true // default to true
   // placeholders
   if (!info.LOGO) info.LOGO = 'https://archilogic-com.github.io/ui-style-guide/certified-partner/archilogic-partner-badge-pyramid-gradient.svg'
   if (!info.LOGO_BG_COLOR) info.LOGO_BG_COLOR = '#ddd'
