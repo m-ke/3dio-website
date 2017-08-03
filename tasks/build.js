@@ -279,22 +279,30 @@ function getAllPartnerInfo () {
 
 const partnerInfoTagRegex = `<script id="partner-info" type="application/x-yaml">([\\n\\s\\S]*)</script>`
 const missingEmptySpaceRegex = /^[\sa-z0-1_-]+(:)[a-z0-1_-]/gmi
+const tabRegex = /\t/g
+const specialWhiteSpaceRegex = /[\u202F\u00A0]/g
 
 function parsePartnerInfo (str, path) {
   const infoSearch = new RegExp(partnerInfoTagRegex).exec(str)
   if (!infoSearch) throw `Partner page ${path} has malformed or missing <script id="partner-info" type="application/x-yaml">...</script> tag`
-  let info, yamlText
+  let info, yamlText = infoSearch[1]
+  // catch typos related to empty spaces
+  yamlText = yamlText.replace(missingEmptySpaceRegex, function(match, group){
+    console.warn(`Fixed missing empty space in YAML part of file ${path} : ${match}`)
+    return match.replace(':', ': ')
+  })
+  yamlText = yamlText.replace(tabRegex, function(match, group){
+    console.warn(`Fixed tabs replacing them with 4 spaces in YAML part of file ${path} : ${match}`)
+    return match.replace(tabRegex, '    ')
+  })
+  yamlText = yamlText.replace(specialWhiteSpaceRegex, function(match){
+    console.warn(`Fixed special white space character replacing it by normal one YAML part of file ${path}`)
+    return match.replace(specialWhiteSpaceRegex, ' ')
+  })
   try {
-    yamlText = infoSearch[1]
-    // catch typos related to empty spaces
-    //  console.log(/^[\sa-z0-1_-]+(:)[a-z0-1_-]/gmi.exec(yamlText))
-    yamlText = yamlText.replace(missingEmptySpaceRegex, function(match, group){
-      console.warn(`Fixed missing empty space in YAML part of file ${path} : ${match}`)
-      return match.replace(':', ': ')
-    })
     info = yaml.safeLoad(yamlText)
   } catch (e) {
-    throw `Sorry, "partner-info" of page ${path} can not be parsed and is probably malformed. Read YAML specs: http://yaml.org/spec/`
+    throw `Parsing error in page "${path}". YAML specs: http://yaml.org/spec/\n${e}`
   }
   // placeholders
   if (!info.LOGO) info.LOGO = 'https://archilogic-com.github.io/ui-style-guide/certified-partner/archilogic-partner-badge-pyramid-gradient.svg'
