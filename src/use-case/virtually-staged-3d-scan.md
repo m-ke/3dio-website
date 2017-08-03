@@ -33,4 +33,4 @@ Here's a fully furnished Matterport OBJ. We're explaining the import process bel
 
 #### Now, just drag-and-drop furniture into your model.
 
-Have fun!
+You can also change the textures using the editor. However, the result will strongly depend on the texture distribution of your scan. Have fun!

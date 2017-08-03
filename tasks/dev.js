@@ -1,4 +1,5 @@
 const gulp = require('gulp')
+const watch = require('gulp-watch')
 const build = require('./build')
 const chalk = require('chalk')
 const spawn = require('child_process').spawn
@@ -30,17 +31,22 @@ const runDevEnvironment = gulp.series(
   build.build,
   gulp.parallel(
     // watch source folder -> rebuild
-    watch,
+    watchSource,
     // watch build folder -> update browser
     runLiteServer
   )
 )
 
-function watch () {
-  gulp.watch(src.pug, build.renderPug)
-  gulp.watch(src.markdown, build.renderMarkdown)
-  gulp.watch(src.less, build.renderLess)
-  gulp.watch(src.staticContent, build.copyStaticContent)
+function watchSource () {
+  // watch source folder -> rebuild
+  watch(src.pug, build.renderPug)
+    .on('error', console.error)
+  watch(src.markdown, build.renderMarkdown)
+    .on('error', console.error)
+  watch(src.less, build.renderLess)
+    .on('error', console.error)
+  watch(src.staticContent, build.copyStaticContent)
+    .on('error', console.error)
 }
 
 function runLiteServer () {
