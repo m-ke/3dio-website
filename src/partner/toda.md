@@ -10,8 +10,7 @@ URL: http://todagroup.com/archilogic.php
 EMAIL: orestk@gmail.com
 COUNTRY: Ukraine
 CITY:
-LOCATION_LAT: 50.448853
-LOCATION_LNG: 30.513346
+LOCATION_LAT_LNG: 50.448853, 30.513346
 SAMPLES:
     - TITLE: The Office
       DESCRIPTION: Highly detailed representation of the workspace featured in the US TV show the Office

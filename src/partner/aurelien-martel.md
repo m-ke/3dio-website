@@ -10,8 +10,7 @@ URL: http://aurelienmartel3d.com/partners/archilogic/
 EMAIL: aurelien_martel@yahoo.fr
 COUNTRY: France
 CITY: Paris
-LOCATION_LAT: 48.864716
-LOCATION_LNG: 2.349014
+LOCATION_LAT_LNG: 48.864716, 2.349014
 SAMPLES:
     - TITLE: Mr. Robot
       DESCRIPTION: "3D representation of Mr. Robot's apartment. Detailed representation of interior spaces."

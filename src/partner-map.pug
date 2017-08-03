@@ -21,10 +21,10 @@ block content
     var partners = getAllPartnerInfo()
     var injectPartners = []
     partners.forEach(function(partner){
-      if (partner.LOCATION_LAT !== undefined && partner.LOCATION_LNG !== undefined) {
+      if (partner.location) {
         injectPartners.push({
-          lat: partner.LOCATION_LAT,
-          lng: partner.LOCATION_LNG,
+          lat: partner.location.lat,
+          lng: partner.location.lng,
           name: partner.NAME,
           logo: `http://res.cloudinary.com/archilogic/image/fetch/w_130,h_50,c_limit/${partner.LOGO}`,
           filename: partner.filename.replace('.md','.html')

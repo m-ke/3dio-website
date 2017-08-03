@@ -279,6 +279,7 @@ function getAllPartnerInfo () {
 
 const partnerInfoTagRegex = `<script id="partner-info" type="application/x-yaml">([\\n\\s\\S]*)</script>`
 const missingEmptySpaceRegex = /^[\sa-z0-1_-]+(:)[a-z0-1_-]/gmi
+const locationRegex = /^\s*([^\s]+),\s*([^\s]+)\s*$/
 const tabRegex = /\t/g
 const specialWhiteSpaceRegex = /[\u202F\u00A0]/g
 
@@ -315,8 +316,18 @@ function parsePartnerInfo (str, path) {
   } else {
     info.SAMPLES = []
   }
-  info.LOCATION_LAT = info.LOCATION_LAT ? parseFloat(info.LOCATION_LAT) : undefined
-  info.LOCATION_LNG = info.LOCATION_LNG ? parseFloat(info.LOCATION_LNG) : undefined
+  // convert location
+  if (info.LOCATION_LAT_LNG) {
+    var locationSearch = locationRegex.exec(info.LOCATION_LAT_LNG)
+    if (locationSearch) {
+      info.location = {
+        lat: parseFloat(locationSearch[1]),
+        lng: parseFloat(locationSearch[2])
+      }
+    } else {
+      console.warn(`Could not parse LOCATION_LAT_LNG in file "${path}"`)
+    }
+  }
   return info
 }
 
