@@ -26,7 +26,6 @@ This can be done with these components:
 | --- | --- |
 | `key` | Specifies a 3d.io [storage key](storage.md) to identify 3d data to display, e.g. `/3f995099-d624-4c8e-ab6b-1fd5e3799173/170515-0913-4p3ktf/1e588a3b-90ac-4a32-b5b8-ff2fda7f87c4.gz.data3d.buffer` |
 | `url` | Specifies a URL of a `.data3d.json` or `.data3d.buffer` file, e.g. `https://storage.3d.io/3f995099-d624-4c8e-ab6b-1fd5e3799173/170515-0913-4p3ktf/1e588a3b-90ac-4a32-b5b8-ff2fda7f87c4.gz.data3d.buffer` |
-| `scene` | Specifies the ID from the [scene library](https://spaces.archilogic.com/dashboard) to be loaded, e.g. `d874690b-2348-431c-812e-248e94ea5b1a` |
 | `lightMapIntensity` | Intensity (default 1.2) of the lightmap being applied |
 | `lightMapExposure` | Exposure (default 0.6) of the lightmap being applied |
 
