@@ -18,7 +18,7 @@ Expect changes: APIs are in first public beta release state.
 
 ## Complementary APIs
 * [Authentication](authentication.md)
-* [Utils](utils.md)
+* Utils
 
 ## Distribution
 * Browser: https://3d.io/releases/
