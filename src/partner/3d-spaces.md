@@ -27,5 +27,5 @@ SAMPLES:
       DESCRIPTION: 8 level, 56 unit off-the-plan residential development in Gosford, NSW, Australia. The interactive representation of the development includes 3D models, floor plans, and rederings, all in one easy-to-use interface.
       IMAGE: https://storage.3d.io/5a4fdff6-a40b-403d-817c-802305866599/2017-07-26_09-53-27_lXMvWD/Screen_Shot_2017-07-26_at_11.53.09.png
       URL: http://www.3dspaces.com.au/portfolio/8-seasons-gosford-nsw/
-      PRICE:
+      PRICE: 1400
 </script>
