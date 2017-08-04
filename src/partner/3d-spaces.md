@@ -1,5 +1,5 @@
 <script id="partner-info" type="application/x-yaml">
-PUBLISH: FALSE
+PUBLISh: true
 NAME: 3D Spaces
 TAGLINE: Visual Interactive Real Estate Marketing
 DESCRIPTION: Visual interactive navigation for real estate. Include all your Archilogic models and other rich media into one interactive navigational experience.
@@ -17,12 +17,12 @@ SAMPLES:
       DESCRIPTION: Project for 5 level, 27 unit off-the-plan residential development in Kedron, Brisbane, Australia. The goal was to give interested buyers a full picture of the available apartment units using renderings and interactive 3D models.
       IMAGE: https://storage.3d.io/5a4fdff6-a40b-403d-817c-802305866599/2017-07-26_09-43-03_xvnkYO/Screen_Shot_2017-07-26_at_11.34.54.png
       URL: http://www.3dspaces.com.au/portfolio/gallagher-on-the-park/
-      PRICE: 
+      PRICE: 1400
     - TITLE: Commercial Office Leasing
       DESCRIPTION: This project included rich media like interactive floor plans, photography, video, and "live view" animated hero.
       IMAGE: https://storage.3d.io/5a4fdff6-a40b-403d-817c-802305866599/2017-07-26_12-32-12_8SJ7dY/Screen_Shot_2017-07-26_at_14.27.21.png
       URL: http://www.3dspaces.com.au/portfolio/40-tank-street-brisbane/
-      PRICE:
+      PRICE: 1400
     - TITLE: 56-unit off-the-plan residential development
       DESCRIPTION: 8 level, 56 unit off-the-plan residential development in Gosford, NSW, Australia. The interactive representation of the development includes 3D models, floor plans, and rederings, all in one easy-to-use interface.
       IMAGE: https://storage.3d.io/5a4fdff6-a40b-403d-817c-802305866599/2017-07-26_09-53-27_lXMvWD/Screen_Shot_2017-07-26_at_11.53.09.png
