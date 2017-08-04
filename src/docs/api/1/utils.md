@@ -2,17 +2,17 @@
 
 ## Data3D utils
 
-### Load a Data3D file (e.g. scenes or furniture)
+### Load a Data3d file (e.g. furniture)
 
-This method is a helper to load Data3D files (e.g. [scenes](https://spaces.archilogic.com/explore) or [furniture](./furniture-library.html)).
+This method is a helper to load Data3D files or [furniture](./furniture-library.html)).
 It loads the specified URL and processes it into a JSON structure.
 
 It takes a single parameter that is the URL to load as a string.
 
 ```javascript
 io3d.utils.data3d.load('https://storage.3d.io/3f995099-d624-4c8e-ab6b-1fd5e3799173/170515-0913-4p3ktf/1e588a3b-90ac-4a32-b5b8-ff2fda7f87c4.gz.data3d.buffer')
-.then(function (scene3d) {
-  console.log(scene3d.meshes.mesh_0.material)
+.then(function (data3d) {
+  console.log(data3d.meshes.mesh_0.material)
 })
 ```
 
@@ -29,11 +29,11 @@ fetch('https://storage.3d.io/3f995099-d624-4c8e-ab6b-1fd5e3799173/170515-0913-4p
   .then(console.log)
 ```
 
-## Call Archilogic APIs (services)
+## Call Archilogic Server Side Endpoints (services)
 
-In case you need to access a specific Archilogic API directly, you may use `io3d.services.call` to do so.
+In case you need to access a specific Archilogic server side endpoint directly, you may use `io3d.services.call` to do so.
 
-**Note**: Please note that the APIs are currently under review and the io3d wrapper methods should be used instead of calling API methods directly. The API methods are subject to change soon and will be wrapped accordingly via the [3dio.js library](https://github.com/archilogic-com/3dio-js).
+**Note**: Please note that the APIs are currently under review and the io3d wrapper methods should be used instead of calling server side endpoint methods as they are subject to change soon and will be wrapped accordingly via the [3dio.js library](https://github.com/archilogic-com/3dio-js).
 
 ```javascript
 io3d.utils.services.call('Model.list', {page: 2})
