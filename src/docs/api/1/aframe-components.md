@@ -18,7 +18,7 @@ This can be done with these components:
   <a-entity io3d-data3d="key:/3f995099-d624-4c8e-ab6b-1fd5e3799173/170515-0913-4p3ktf/1e588a3b-90ac-4a32-b5b8-ff2fda7f87c4.gz.data3d.buffer" position="0 0 0"></a-entity>
 </a-scene>
 ```
-[Interactive demo](https://jsfiddle.net/3dio/5wgoq2u7/embedded/result,html/dark/)
+[Interactive demo](https://3dio-aframe.glitch.me/)
 
 ## Displaying 3d data with `io3d-data3d`
 
