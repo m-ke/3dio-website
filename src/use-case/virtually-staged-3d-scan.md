@@ -4,10 +4,6 @@ Our platform lets you import 3D scans as OBJs. Once they are in the platform the
 
 ## Result
 Here's a fully furnished Matterport OBJ. We're explaining the import process below. Important: Matterport lets you export the point cloud OBJ but not the photo spheres contained in it. This means that these photo spheres will not be available on our platform after the import.
-<div class="keep-iframe-ratio">
-  <svg viewBox="0 0 16 9" xmlns="http://www.w3.org/2000/svg"></svg>
-  <iframe src="https://spaces.archilogic.com/3d/Virtual_Realty/wrlmmcb9?modelResourceId=8e129488-9015-4c58-b7cf-31c16a784c5e&autostart=0&mode=view"></iframe>
-</div>
 
 ## Importing your Matterport OBJ
 
@@ -26,10 +22,6 @@ Drag-and-drop your entire Matterport export (.obj, .mtl, .jpgs) into the empty c
 </a>
 
 Once the import is complete you will likely have to flip the XZ coordinates. To do that check the box on the menu that appears when you select the importet 3d object.
-
-<a href="https://storage.3d.io/535e624259ee6b0200000484/2017-07-19_08-27-28_HxYU6p/Screen_Shot_2017-07-19_at_10.09.59.png">
-<img src="https://storage.3d.io/535e624259ee6b0200000484/2017-07-19_08-27-28_HxYU6p/Screen_Shot_2017-07-19_at_10.09.59.png">
-</a>
 
 Now, just drag-and-drop furniture into your model.
 
