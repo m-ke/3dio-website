@@ -163,7 +163,7 @@
     "category": "content",
     "description": null,
     "app": {
-      "url": "https://spaces.archilogic.com/explore"
+      "url": null
     },
     "api": {
       "name": "scene",
