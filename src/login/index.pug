@@ -1,0 +1,17 @@
+html
+  body
+    script(src="https://3d.io/releases/3dio-js/1.x.x-beta/3dio.min.js")
+    script.
+
+      var DEFAULT_REDIRECT_URL = "!{urlPathRoot}/"
+
+      io3d.ui.logIn().then(redirect, io3d.ui.message.error)
+
+      function redirect () {
+        window.document.location = gerRedirectionUrlFromQuery() || DEFAULT_REDIRECT_URL
+      }
+
+      function gerRedirectionUrlFromQuery () {
+        var redirect = /redirect=([^&]+)/i.exec(window.document.location)
+        return redirect ? redirect[1] : null
+      }
