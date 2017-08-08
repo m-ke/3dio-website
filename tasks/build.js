@@ -154,6 +154,8 @@ function generatePartnerProfilePages () {
         urlPathRoot: urlPathRoot,
         githubLink: getGithubEditLink(inputFile)
       })
+      // add anchor links to titles
+      html = addAnchorLinksToTitles(html, inputFile)
       // remap relative links and markdown links
       html = remapLinks(html, inputFile)
       // create vinyl object for output
@@ -192,6 +194,8 @@ function renderMarkdown () {
       })
       // pug renderer wraps code tags into pre tegs. we dont want that
       html = html.replace(/<pre>[\n\s]*<code/gmi, '<code').replace(/<\/code>[\n\s]*<\/pre>/gmi, '</code>')
+      // add anchor links to titles
+      html = addAnchorLinksToTitles(html, inputFile)
       // remap relative links and markdown links
       html = remapLinks(html, inputFile)
       // create vinyl object for output
@@ -216,6 +220,13 @@ function renderLess () {
 }
 
 // helpers
+
+const hTagInHtmlRegex = /(<h[1-5] *[^\/>]*id="([^"]*)"*[^\/>]*\>)([^<]*)(<\/h[1-5]>)/gi
+function addAnchorLinksToTitles (html, inputFile) {
+  return html.replace(hTagInHtmlRegex, function(tag, tagStart, id, content, tagEnd){
+    return '<a href="#'+id+'" class="h-link">'+ tagStart + content + tagEnd + '</a>'
+  })
+}
 
 const aTagInHtmlRegex = /\<a *[^\/>]*href="([^"]*|\\")*"*[^\/>]*\>/gi
 const mdExtensionInUrlRegex = /(\.md)/gi
