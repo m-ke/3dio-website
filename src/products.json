@@ -151,7 +151,7 @@
     },
     "api": {
       "name": "furniture",
-      "url": null,
+      "url": "https://3d.io/docs/api/1/furniture.html",
       "methods": {
         "search": { "requiresKey": "optional" },
         "read": { "requiresKey": "optional" }
