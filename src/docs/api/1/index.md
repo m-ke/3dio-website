@@ -18,6 +18,7 @@ Expect changes: APIs are in first public beta release state.
 
 ## Complementary APIs
 * [Authentication](authentication.md)
+* [UI](ui.md)
 * Utils
 
 ## Distribution
