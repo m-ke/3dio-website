@@ -5,13 +5,13 @@ Expect changes: APIs are in first public beta release state.
 ## Product APIs
 * [A-Frame Components](aframe-components.md)
 * [Storage](storage.md)
-* [Furniture Library](furniture-library.md)
+* [Furniture](furniture.md)
+* Scene
 * Home Staging AI
 * Floor Plan to 3D conversion
 * Import / Publishing
 * Export
 * Matterport Import
-* Scene Library
 * Material Library
 * Lightmap Baking
 * Modifiers
