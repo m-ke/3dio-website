@@ -4,7 +4,7 @@
 
 If you are building a 3D web application with the [A-Frame](https://aframe.io) library
 you may find it convenient to **display 3D scenes** from your own or our public [Scene library](/docs/api/1/scene-library.html)
-or **display furniture** from our [Furniture library](/docs/api/1/furniture-library.html).
+or **display furniture** from our [Furniture library](https://furniture.3d.io).
 
 This can be done with these components:
 
