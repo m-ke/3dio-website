@@ -1,6 +1,6 @@
 # Furniture Library
 
-The furniture library API calls give you access to the broad [furniture library](https://spaces.archilogic.com/products) offered by [Archilogic](https://spaces.archilogic.com/explore).
+The furniture library API calls give you access to the broad [furniture library](https://furniture.3d.io) offered by [Archilogic](https://spaces.archilogic.com/explore).
 
 ## Searching the library
 
@@ -48,9 +48,9 @@ API key: **not required**
 
 | Parameter | Required? | Description |
 | --- | --- | --- |
-| `productResourceId` | Yes | The ID of the product to retrieve. |
+| `furniture ID` | Yes | The ID of the furniture piece to retrieve. |
 
-The following snippet reads a single product with the ID `943357e8-911f-4bb5-8b89-8281385ef08f`:
+The following snippet reads a single piece of furniture with the ID `943357e8-911f-4bb5-8b89-8281385ef08f`:
 
 ```javascript
   io3d.furniture.get('943357e8-911f-4bb5-8b89-8281385ef08f').then(console.log)

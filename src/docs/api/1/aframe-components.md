@@ -11,7 +11,7 @@ This can be done with these components:
 ```html
 <a-scene>
   <!-- furniture specified by id (= productResourceId) -->
-  <!-- get more: https://spaces.archilogic.com/products -->
+  <!-- get more: https://furniture.3d.io -->
   <a-entity io3d-furniture="id:10344b13-d981-47a0-90ac-f048ee2780a6" position="-2 0 -3.2" rotation="0 180 0"></a-entity>
 
   <!-- data3d files specified by 3d.io store key or URL -->
