@@ -1,0 +1,57 @@
+extends pug-common/main.pug
+
+
+block head
+  link(href=urlPathRoot+'/css/md-wrapper.css', rel='stylesheet')
+  link(href=urlPathRoot+'/css/partner-samples-page.css', rel='stylesheet')
+
+block content
+  .container#intro
+    .row
+      .twelve.columns
+        h2 Certified Partners: Sample Projects
+
+  .container#filter
+    .row
+      .twelve.columns
+
+  .container#sample-list
+    //- Read partners json and extract data for use in template
+    -
+      var partners = getAllPartnerInfo()
+      var samples = []
+      partners.forEach(function(partner, i){
+        partner.SAMPLES.forEach(function(sample, i){
+          sample.partner = partner // circular relation...
+          samples.push(sample)
+        })
+      })
+
+    //- Mixin (html template for partner list)
+    mixin sampleMixin(sample, partner)
+      tr.sample
+        td
+          img(src=sample.IMAGE).sample-image
+        td
+          h3=sample.TITLE
+        td
+          .logo-container
+            .bg(style=`background:${partner.LOGO_BG_COLOR};`)
+            - var m = partner.LOGO_SIZE ? ((100 - parseFloat(sample.partner.LOGO_SIZE)) / 2) : 8
+            .logo(style=`background-image: url('${partner.LOGO}');top:${m}%;right:${m}%;bottom:${m}%;left:${m}%;`)
+        td
+          p=partner.NAME
+        td
+          p=sample.PRICE
+
+    table
+      each sample in samples
+        +sampleMixin(sample, sample.partner)
+
+  .container
+    .row
+      .twelve.columns
+        p
+          a(href='/floor-plan-to-3d-conversion.md') Read about how Certified Partners and 3d.io work together
+        p
+          a(href='/partner-application.md') Apply to Certified Partner Program

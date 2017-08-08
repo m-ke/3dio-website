@@ -1,0 +1,84 @@
+extends main.pug
+
+
+block head
+  link(href=urlPathRoot+'/css/md-wrapper.css', rel='stylesheet')
+  link(href=urlPathRoot+'/css/partner-profile-page.css', rel='stylesheet')
+
+block content
+
+  #intro.container
+    .row
+      .twelve.columns
+        p Certified Partner of 3d.io
+        .logo-container
+          .bg(style=`background: ${partner.LOGO_BG_COLOR};`)
+          - var m = (100 - partner.LOGO_SIZE) / 2
+          .logo(style=`background-image: url('${partner.LOGO}');top:${m}%;right:${m}%;bottom:${m}%;left:${m}%;`)
+        h1=partner.NAME
+        if partner.TAGLINE
+          h3!=partner.TAGLINE
+        if partner.DESCRIPTION
+          .description!=partner.DESCRIPTION
+        .badges
+          a(href='mailto:'+partner.EMAIL).badge.contact Email
+          if partner.URL
+            a(href=partner.URL target='_blank').badge.website Website
+        if partner.IMAGE
+          img(src=partner.IMAGE).image
+
+  if partner.SAMPLES
+    #samples.container
+      .row
+        .twelve.columns
+        h2 Sample Projects
+      .row
+        //- create sample rows o 3 each
+        -
+          var exampleRows = []
+          for (var i=0, l=partner.SAMPLES.length; i<l; i+=3) {
+            exampleRows.push([ partner.SAMPLES[i], partner.SAMPLES[i+1], partner.SAMPLES[i+2] ])
+          }
+
+        //- Mixin (html template for partner list)
+        mixin sample(sample)
+          .four.columns.sample
+            .partner
+              .image
+                a(href=sample.URL)
+                  img(src=sample.IMAGE)
+                  .play-button
+              if sample.TITLE
+                h3=sample.TITLE
+              if sample.DESCRIPTION
+                p!=sample.DESCRIPTION
+              if sample.PRICE
+                -
+                  var orderLink = `mailto:${partner.EMAIL}` + encodeURI(`?subject=Offer Request&body=Hi
+
+                  I'm interested in an offer for a project similar to "${sample.TITLE}" (Pricing starting at $ ${sample.PRICE}).
+
+                  Best wishes`)
+                a(href=orderLink)
+                  .order Order for $ #{sample.PRICE}+
+
+        //- print rows of 3 examples
+        each e in exampleRows
+          .row
+            if e[0]
+              +sample(e[0])
+            if e[1]
+              +sample(e[1])
+            if e[2]
+              +sample(e[2])
+
+
+  #additional-content.container
+    .row
+      .twelve.columns !{content}
+
+  .container
+    .row
+      .twelve.columns
+        p
+          a(href='/floor-plan-to-3d-conversion.md') Read more about how Certified Partners and 3d.io work together

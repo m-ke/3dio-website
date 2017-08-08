@@ -1,13 +1,13 @@
 # Authentication
 
-## Log in
+## Logging a user in to access their content
 
 API Key: **not required**
 
 Start an authenticated user session:
 
 ```javascript
-  IO3D.auth.logIn({
+  io3d.auth.logIn({
     name: 'demo@example.org',
     password: 'mypassword'
   }).then(console.log)
@@ -27,7 +27,7 @@ API Key: **not required**
 Invalidates and ends an authenticated user session. After logging out you can no longer access private user data.
 
 ```javascript
-  IO3D.auth.logOut().then(console.log)
+  io3d.auth.logOut().then(console.log)
 ```
 
 ## Get session information
@@ -37,5 +37,5 @@ API Key: **not required**
 Indicates if the user is logged in. Returns user information if the `isAuthenticated` property is true or an empty user object if it is false.
 
 ```javascript
-  IO3D.auth.getSession().then(console.log)
+  io3d.auth.getSession().then(console.log)
 ```
