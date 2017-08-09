@@ -60,7 +60,7 @@ Exemplary data returned from `io3d.furniture.search` or `io3d.furniture.get`
 {
   "id": "5b97e7b5-2d13-4489-bf76-013ad70949fe",
   "name": "Basel Chair",
-  "description": "With the Basel Chair, Jasper Morrison renews the classic genre of simple wooden chairs, which have been industrially produced over the past 100 years in great quantity and variety. The eye is immediately struck by the harmonious proportions, yet on closer inspection the chair also reveals a decisive innovation: the seat and back are made of plastic, allowing for a more pronounced organic shape, enhanced surface texture and an overall thinner and thus more flexible design compared to all-wood chairs. Thanks to this combination of materials, the Basel Chair provides significantly improved seating comfort over chairs made only of wood and, in its two-tone variants, is especially pleasing to the eye.<br><br>Vitra furniture is protected by copyright. Vitra has been authorised by the owners of the intellectual property rights for the manufacture and distribution of these designs and holds the exclusive worldwide rights for their production and sale.</br>Restrictions apply. Details:<br><a href='https://www.vitra.com/en-ch/content/distribution-rights' target='_blank'>https://www.vitra.com/en-ch/content/distribution-rights</a> ",
+  "description": "With the Basel Chair, Jasper Morrison renews the classic genre of simple wooden chairs, which have been industrially produced over the past 100 years in great quantity and variety.",
   "manufacturer": "Vitra",
   "designer": "Jasper Morrison",
   "indexImage": "https://storage.3d.io/archilogic/interior/vitra/chairs/Basel-Chair/info/3d.png",
