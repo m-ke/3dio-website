@@ -9,6 +9,10 @@ or **display furniture** from our [Furniture library](https://furniture.3d.io).
 This can be done with these components:
 
 ```html
+<head>
+  <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+  <script src="https://3d.io/releases/3dio-js/1.x.x-beta/3dio.min.js"></script>
+</head>
 <a-scene>
   <!-- furniture specified by furniture id -->
   <!-- get more: https://furniture.3d.io -->
