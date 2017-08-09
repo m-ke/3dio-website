@@ -56,7 +56,7 @@
       }
     }
   },{
-    "title": "Basic 3D Model from Floor Plan",
+    "title": "Convert Floor Plans to Basic 3D Models",
     "icon": "icon-floor-plan-to-3d-conversion",
     "category": "content",
     "description": null,
@@ -71,7 +71,7 @@
       }
     }
   },{
-    "title": "3D Import / Publishing",
+    "title": "Publish 3D Models",
     "icon": "icon-3d-import",
     "category": "content",
     "description": null,
@@ -91,7 +91,7 @@
       }
     }
   },{
-    "title": "3D Export",
+    "title": "Export 3D Models",
     "icon": "icon-3d-export",
     "category": "content",
     "description": null,
@@ -111,7 +111,7 @@
       }
     }
   },{
-    "title": "Matterport Import",
+    "title": "Import Matterport 3D Scans",
     "icon": "icon-matterport-import",
     "category": "content",
     "description": null,
