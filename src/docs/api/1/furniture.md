@@ -15,11 +15,11 @@ Get a list of max 50 furniture objects related to `wood` and `chair`:
   io3d.furniture.search('Wood Chair', { limit: 50 }).then(console.log)
 ```
 
-| Parameter | Required? | Description |
-| --- | --- | --- |
-| `query` | Yes | An string specifying search options (see below) or `null` to return random furniture pieces. |
-| `options` | No | |
-| `options.limit` | No | How many results will be returned at most. |
+| Parameter | Type | Required? | Description |
+| --- | --- | --- | --- |
+| `query` | String | Yes | An string specifying search options (see below) or `null` to return random furniture pieces. |
+| `options` | Object | No | |
+| `options.limit` | Number | No | How many results will be returned at most. |
 
 <!--
 The `searchQuery` object looks like this with all fields being optional:
@@ -48,16 +48,16 @@ The following snippet reads a single piece of furniture using a specific furnitu
   io3d.furniture.get('943357e8-911f-4bb5-8b89-8281385ef08f').then(console.log)
 ```
 
-| Parameter | Required? | Description |
-| --- | --- | --- |
-| `furniture ID` | Yes | The ID of the furniture piece to retrieve. |
+| Parameter | Type | Required? | Description |
+| --- | --- | --- | --- |
+| `furnitureId` | String | Yes | The ID of the furniture piece to retrieve. Obtain furnitureIds from the furniture library: at https://furniture.3d.io |
 
 ## Furniture Data Structure
 
 Exemplary data returned from `io3d.furniture.search` or `io3d.furniture.get` 
 
 ```JSON
-"{
+{
   "id": "5b97e7b5-2d13-4489-bf76-013ad70949fe",
   "name": "Basel Chair",
   "description": "With the Basel Chair, Jasper Morrison renews the classic genre of simple wooden chairs, which have been industrially produced over the past 100 years in great quantity and variety. The eye is immediately struck by the harmonious proportions, yet on closer inspection the chair also reveals a decisive innovation: the seat and back are made of plastic, allowing for a more pronounced organic shape, enhanced surface texture and an overall thinner and thus more flexible design compared to all-wood chairs. Thanks to this combination of materials, the Basel Chair provides significantly improved seating comfort over chairs made only of wood and, in its two-tone variants, is especially pleasing to the eye.<br><br>Vitra furniture is protected by copyright. Vitra has been authorised by the owners of the intellectual property rights for the manufacture and distribution of these designs and holds the exclusive worldwide rights for their production and sale.</br>Restrictions apply. Details:<br><a href='https://www.vitra.com/en-ch/content/distribution-rights' target='_blank'>https://www.vitra.com/en-ch/content/distribution-rights</a> ",
@@ -79,5 +79,5 @@ Exemplary data returned from `io3d.furniture.search` or `io3d.furniture.get`
   "boundingBox": { "length": 0.42, "width": 0.46, "height": 0.78 },
   "boundingPoints": { "min": [-0.21,0,-0.23], "max": [0.21,0.78,0.23] },
   "updated": "2017-02-23T20:30:09Z"
-}"
+}
 ```
