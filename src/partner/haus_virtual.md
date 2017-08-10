@@ -5,7 +5,7 @@ NAME: Haus Virtual
 TAGLINE: Hand crafted 3D models and landing pages
 DESCRIPTION: Haus Virtual is about bringing real estate spaces into the virtual world. From 3D crafted homes to landing pages, to marketing and consulting - we work to get you known and sold.
 LOGO: https://storage.3d.io/5a4fdff6-a40b-403d-817c-802305866599/2017-08-10_20-44-14_3quyoM/Haus-Virtual-ver2.png
-LOGO_SIZE: 130 #percent
+LOGO_SIZE: 90 #percent
 LOGO_BG_COLOR: '#ddd'
 IMAGE:
 URL: https://www.hausvirtual.com/
