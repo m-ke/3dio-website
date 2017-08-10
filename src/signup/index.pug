@@ -5,7 +5,7 @@ html
 
       var DEFAULT_REDIRECT_URL = "!{urlPathRoot}/"
 
-      io3d.ui.signUp().then(redirect, io3d.ui.message.error)
+      io3d.utils.ui.signUp().then(redirect, io3d.utils.ui.message.error)
 
       function redirect () {
         window.document.location = gerRedirectionUrlFromQuery() || DEFAULT_REDIRECT_URL

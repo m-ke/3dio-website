@@ -59,7 +59,7 @@ io3d.storage.put([file1, file2]).then(function (keys) {
 var file = new Blob(['Hello World'])
 
 // uploading a file to specific location requires login
-io3d.auth.login({
+io3d.utils.auth.login({
   username: 'your-username-here',
   password: 'your-password-here'
 }).then(function (session) {

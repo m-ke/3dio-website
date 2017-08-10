@@ -30,8 +30,8 @@ script.
   var $signUp = $('<a>', {
     text: 'Sign Up',
     click: function () {
-      io3d.ui.signUp().then(function (session) {
-        io3d.ui.message.success('Welcome!')
+      io3d.utils.ui.signUp().then(function (session) {
+        io3d.utils.ui.message.success('Welcome!')
       })
     }
   }).appendTo($nonAuthenticated)
@@ -39,8 +39,8 @@ script.
   var $logIn = $('<a>', {
     text: 'Log In',
     click: function () {
-      io3d.ui.logIn().then(function (session) {
-        io3d.ui.message.success('Welcome!')
+      io3d.utils.ui.logIn().then(function (session) {
+        io3d.utils.ui.message.success('Welcome!')
       })
     }
   }).appendTo($nonAuthenticated)
@@ -48,19 +48,19 @@ script.
   var $authenticated = $('<span>').hide().appendTo($user)
   var $logIn = $('<a>', {
     text: 'Dev Dashboard',
-    click: io3d.ui.devDashboard
+    click: io3d.utils.ui.devDashboard
   }).appendTo($authenticated)
   $('<div>', {class: 'spacer'}).appendTo($authenticated)
   var $signUp = $('<a>', {
     text: 'Log Out',
     click: function () {
-      io3d.auth.logOut().then(function (session) {
-        io3d.ui.message('See you later')
+      io3d.utils.auth.logOut().then(function (session) {
+        io3d.utils.ui.message('See you later')
       })
     }
   }).appendTo($authenticated)
 
-  io3d.auth.session$.subscribe(function (session) {
+  io3d.utils.auth.session$.subscribe(function (session) {
     if (session.isAuthenticated) {
       $nonAuthenticated.hide()
       $authenticated.show()

@@ -35,7 +35,7 @@ To generate an API key or see your previously-generated key, visit [your organis
 <script>
 
 function makeApiKey() {
-  IO3D.utils.services.call('Organization.generateApiKey').then(function (apiKey) {
+  io3d.utils.services.call('Organization.generateApiKey').then(function (apiKey) {
     var tpl = document.importNode(document.getElementById('apiKeyExists').content, true)
     tpl.querySelector('pre').textContent = apiKey
     container.innerHTML = ''
@@ -44,9 +44,9 @@ function makeApiKey() {
 }
 
 var container = document.getElementById('apiKeyInfo')
-IO3D.auth.getSession().then(function (session) {
+io3d.utils.auth.getSession().then(function (session) {
   if (session.isAuthenticated) {
-    IO3D.utils.services.call('Organization.read').then(function (organization) {
+    io3d.utils.services.call('Organization.read').then(function (organization) {
       if (organization.apiKey) {
         var tpl = document.importNode(document.getElementById('apiKeyExists').content, true)
         tpl.querySelector('pre').textContent = organization.apiKey
