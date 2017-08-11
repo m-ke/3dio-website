@@ -2,7 +2,11 @@
 
 Expect changes: APIs are in first public beta release state.
 
-## Product APIs
+## Get Started
+* Install
+* Authentication
+
+## Products
 * [A-Frame components](aframe-components.md)
 * [Storage](storage.md)
 * [Furniture](furniture.md)
@@ -16,15 +20,13 @@ Expect changes: APIs are in first public beta release state.
 * Lightmap baking
 * Modify 3D model
 
-## Complementary APIs
-* [Authentication](authentication.md)
+## Utils
 * [UI](ui.md)
-* Utils
 
 ## Distribution
 * Browser: https://3d.io/releases/
 * Node: https://www.npmjs.com/package/3dio
-* Github: https://github.com/archilogic-com/3dio-js
 
-## Contributing
-* [Documentation guidelines](https://github.com/archilogic-com/3dio-js/blob/master/CONTRIBUTING.md#documentation)
+## Contribute
+* [Guidelines](https://github.com/archilogic-com/3dio-js/blob/master/CONTRIBUTING.md)
+* Github: https://github.com/archilogic-com/3dio-js
