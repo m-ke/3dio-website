@@ -248,7 +248,7 @@ function remapLinks (html, inputFile) {
         return tag
       } else {
         // add target attribute
-        return tag.replace('<a ', '<a target="_blank" ')
+        return tag.replace('<a ', '<a target="_blank" rel="noopener" ')
       }
     } else {
       // add root path to relative pages
