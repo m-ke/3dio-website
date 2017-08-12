@@ -1,6 +1,7 @@
 # API v1 Reference
 
-Expect changes: APIs are in first public beta release state.
+Expect changes: APIs are in first public beta release state.<br>
+Questions? [Ask us on Stack Overflow.](https://stackoverflow.com/questions/tagged/aframe%20and%203d.io%20or%20archilogic)
 
 ## Get Started
 * Install
