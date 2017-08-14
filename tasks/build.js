@@ -247,7 +247,10 @@ function remapLinks (html, inputFile) {
   const urlPath = urlPathRoot+'/'+inputFile.path.substr(inputFile.base.length)
   const urlPathDir = (path.dirname(urlPath)+'/').replace('//','/')
   return html.replace(aTagInHtmlRegex, function (tag, url) {
-    if (!url || url.substr(0, 7) === 'mailto:' || url.substr(0, 11) === 'javascript:' || url[0] === '#') {
+    if (url.substr(0, 11) === 'javascript:') {
+      throw 'Javascript inside href attribute will not work on Firefox:\n'+tag+'\nFile: '+inputFile.path
+      return tag
+    } else if (!url || url.substr(0, 7) === 'mailto:' || url[0] === '#') {
       // don't modife empty href tags, email, javascript links, hashtags
       return tag
     } else if (url.substr(0, 4) === 'http') {
