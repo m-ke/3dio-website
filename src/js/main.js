@@ -101,6 +101,21 @@ $(function(){
     }
   })
 
+  /*
+   * Make certain classes to clickable
+   */
+
+  $('.open-dev-dashboard').each(function(i, el){
+    $(el).on('click', io3d.utils.ui.devDashboard)
+  })
+  $('.open-publishable-api-keys-menu').each(function(i, el){
+    $(el).on('click', io3d.utils.ui.publishableApiKeys)
+  })
+  $('.open-secret-api-key-menu').each(function(i, el){
+    $(el).on('click', io3d.utils.ui.secretApiKey)
+  })
+
+
 })
 
 
