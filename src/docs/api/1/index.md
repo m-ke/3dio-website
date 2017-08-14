@@ -4,8 +4,10 @@ Expect changes: APIs are in first public beta release state.<br>
 Questions? [Ask us on Stack Overflow.](https://stackoverflow.com/questions/tagged/aframe%20and%203d.io%20or%20archilogic)
 
 ## Get Started
-* Install
-* Authentication
+* [Browser](get-started-browser.md)
+* [Node Server](get-started-node-server.md)
+* [Configs](configs.md)
+* [Authentication](authentication.md)
 
 ## Products
 * [A-Frame components](aframe-components.md)
