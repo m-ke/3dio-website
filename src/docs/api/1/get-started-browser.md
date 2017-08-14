@@ -74,4 +74,3 @@ Please do not use secret API keys in browser environments. Doing so would expose
 
 * [Authentication overview](authentication.md)
 * [Config options](configs.md)
-* [Using 3dio with Node.js](get-started-node-server.md)

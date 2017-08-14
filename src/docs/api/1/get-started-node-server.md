@@ -35,4 +35,3 @@ io3d.config({
 
 * [Authentication overview](authentication.md)
 * [Config options](configs.md)
-* [Using 3dio with Node.js](get-started-node-server.md)
