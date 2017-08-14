@@ -10,7 +10,7 @@ URL: http://www.walkthishouse.com/
 EMAIL: info@walkthishouse.com
 COUNTRY: USA
 CITY: Hoboken NJ 
-LOCATION_LAT_LNG: 40.45, 74.2 
+LOCATION_LAT_LNG: 40.7424928,-74.0321353
 SAMPLES:
     - TITLE: Multi Storey Villa
       DESCRIPTION: "3D representation of a multi storey villa project including a slanted roof."
