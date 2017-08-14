@@ -1,6 +1,6 @@
 # Get Started
 
-
+[Basics](#browser) | [Package Manager](#package-manager-support) | [Publishable API Keys](#using-publishable-api-keys)
 
 ## Browser
 
@@ -68,7 +68,7 @@ io3d.config({
 
 ## Secret API Key
 
-Not supported in Browser because ... 
+Please do not use (expose) secret API keys in browser environments. Secret API keys should be kept secret and thus only be used in secure environments. expose your secret API key only to trusted 3rd parties.
 
 ## Next Steps
 
