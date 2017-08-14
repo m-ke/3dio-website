@@ -43,7 +43,7 @@ For some extended functionality with subscription based quotas a <a href="javasc
 Specify your publishable API key in the 3dio script URL:
 
 ```javascript
-<script src="https://3d.io/releases/3dio-js/1.x.x/3dio.min.js&pk=[[YOUR_PUBLISHABLE_API_KEY]]"></script>
+<script src="https://3d.io/releases/3dio-js/1.x.x/3dio.min.js&pk=YOUR_PUBLISHABLE_API_KEY"></script>
 ```
 
 Alternatively you can set a publishable API key dynamically using the config method:
@@ -52,7 +52,7 @@ Alternatively you can set a publishable API key dynamically using the config met
 <script src="https://3d.io/releases/3dio-js/1.x.x-beta/3dio.min.js"></script>
 <script>
   io3d.config({
-    publishableApiKey:'[[YOUR_PUBLISHABLE_API_KEY]]'
+    publishableApiKey:'YOUR_PUBLISHABLE_API_KEY'
   })
 </script>
 ```

@@ -64,31 +64,18 @@ marked.setOptions({
   highlight (code, lang, callback) {
 
     // replace publishable api key placeholder with html element
-    var iPublishable = '\\[\\[YOUR_PUBLISHABLE_API_KEY\\\]\]' // input
+    var iPublishable = 'YOUR_PUBLISHABLE_API_KEY' // input
+    var iPublishableRegex = new RegExp(iPublishable,'gmi')
     var oPublishable = '<span class="your-publishable-api-key">YOUR_PUBLISHABLE_API_KEY</span>' // output
 
     // replace secret api key placeholder with html element
-    var iSecret = '\\[\\[YOUR_SECRET_API_KEY\\]\\]' // input
+    var iSecret = 'YOUR_SECRET_API_KEY' // input
+    var iSecretRegex = new RegExp(iSecret,'gmi')
     var oSecret = '<span class="your-secret-api-key">YOUR_SECRET_API_KEY</span>' // output
 
-    // replace placeholder in code with one that survives pygmentization in one piece
-
-    var tempPublishable = 'pppppppppppppppppppp'
-    var tempPublishableRegex = new RegExp(tempPublishable,'gmi')
-    var iPublishableRegex = new RegExp(iPublishable,'gmi')
-    code = code.replace(iPublishableRegex, tempPublishable)
-
-    var tempSecret = 'ssssssssssssssssssss'
-    var tempSecretRegex = new RegExp(tempSecret,'gmi')
-    var iSecretRegex = new RegExp(iSecret,'gmi')
-    code = code.replace(iSecret, tempSecret)
-
     // colorize code
-
     return pygmentize({lang: lang, format: 'html'}, code, (err, result) => {
-      var html = result.toString()
-        .replace(tempPublishableRegex, oPublishable)
-        .replace(tempSecretRegex, oSecret)
+      var html = result.toString().replace(iPublishable, oPublishable).replace(iSecret, oSecret)
       callback(err, html)
     })
   }
