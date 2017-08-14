@@ -191,7 +191,7 @@ block content
         tr
           td.desc
           td.free
-            a.get-api-key.cta Get API Key
+            a.open-dev-dashboard.cta Get API Key
           td.pro
             .cta-coming-soon Coming Soon
           td.bus
@@ -250,7 +250,7 @@ block content
         //-  a(href='contributors.md') Full contributor list
 
   script.
-    $('.get-api-key').each(function(i, el){
+    $('.open-dev-dashboard').each(function(i, el){
       console.log(el)
       $(el).on('click', io3d.utils.ui.devDashboard)
     })
