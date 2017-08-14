@@ -2,17 +2,6 @@ extends main.pug
 
 block head
   link(href=urlPathRoot + '/css/md-wrapper.css', rel='stylesheet')
-  script.
-    $('.your-publishable-api-key').each(function (el) {
-      $(el).on('click', function(){
-        io3d.utils.ui.publishableApiKeys()
-      })
-    })
-    $('.your-secret-api-key').each(function (el) {
-      $(el).on('click', function () {
-        io3d.utils.ui.secretApiKey()
-      })
-    })
 
 block content
   .container.markdown

@@ -66,12 +66,12 @@ marked.setOptions({
     // replace publishable api key placeholder with html element
     var iPublishable = 'YOUR_PUBLISHABLE_API_KEY' // input
     var iPublishableRegex = new RegExp(iPublishable,'gmi')
-    var oPublishable = '<span class="your-publishable-api-key">YOUR_PUBLISHABLE_API_KEY</span>' // output
+    var oPublishable = '<span class="your-publishable-api-key open-publishable-api-keys-menu">YOUR_PUBLISHABLE_API_KEY</span>' // output
 
     // replace secret api key placeholder with html element
     var iSecret = 'YOUR_SECRET_API_KEY' // input
     var iSecretRegex = new RegExp(iSecret,'gmi')
-    var oSecret = '<span class="your-secret-api-key">YOUR_SECRET_API_KEY</span>' // output
+    var oSecret = '<span class="your-secret-api-key open-secret-api-key-menu">YOUR_SECRET_API_KEY</span>' // output
 
     // colorize code
     return pygmentize({lang: lang, format: 'html'}, code, (err, result) => {

@@ -38,7 +38,7 @@ We support Bower, Webpack, Require.js and simmilar. 3dio is packaged in UMD (Uni
 
 ## Using Publishable API Keys
 
-For some extended functionality with subscription based quotas a <a href="javascript:io3d.utils.ui.publishableApiKeys();">publishable API key</a> is required. The [authetication docs](authentication.md) provide a detailed overview of what exactly you can do with publishable API keys. 
+For some extended functionality with subscription based quotas a <a class="open-publishable-api-keys-menu">publishable API key</a> is required. The [authetication docs](authentication.md) provide a detailed overview of what exactly you can do with publishable API keys. 
 
 Specify your publishable API key in the 3dio script URL:
 
@@ -68,7 +68,7 @@ io3d.config({
 
 ## Secret API Key
 
-Please do not use (expose) secret API keys in browser environments. Secret API keys should be kept secret and thus only be used in secure environments. expose your secret API key only to trusted 3rd parties.
+Please do not use secret API keys in browser environments. Doing so would expose it to everybody. Secret API keys should be kept secret and used only in secure environments. expose your secret API key only to trusted 3rd parties.
 
 ## Next Steps
 
