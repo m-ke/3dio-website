@@ -62,7 +62,7 @@ Config is also the recommended method when using a package manager like Bower, W
 ```javascript
 var io3d = require('3dio')
 io3d.config({
-  publishableApiKey:'[[YOUR_PUBLISHABLE_API_KEY]]'
+  publishableApiKey: 'YOUR_PUBLISHABLE_API_KEY'
 })
 ```
 
