@@ -7,7 +7,7 @@
 ```javascript
 <head>
   <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
-  <script src="https://3d.io/releases/3dio-js/1.x.x-beta/3dio.min.js"></script>
+  <script src="https://3d.io/releases/3dio-js/1.x.x/3dio.min.js"></script>
 </head>
 <body>
   <script>
@@ -27,7 +27,7 @@ Using 3dio without A-Frame is also possible. This is particullary useful if you 
 
 ## Package Manager Support
  
-We support Bower, Webpack, Require.js or simmilar. 3dio is packaged in UMD (Universal Module Definition) format so that it can be used as CommonJS or AMD module:
+We support Bower, Webpack, Require.js and simmilar. 3dio is packaged in UMD (Universal Module Definition) format so that it can be used as CommonJS or AMD module.
 
 1. Install library from npm `npm install 3dio --save`
 2. Use it your code base:
@@ -57,7 +57,7 @@ Alternatively you can set a publishable API key dynamically using the config met
 </script>
 ```
 
-### With Bower, Webpack, Require.js 
+Config is also the recommended method when using a package manager like Bower, Webpack, Require.js or similar: 
 
 ```javascript
 var io3d = require('3dio')
@@ -65,6 +65,10 @@ io3d.config({
   publishableApiKey:'[[YOUR_PUBLISHABLE_API_KEY]]'
 })
 ```
+
+## Secret API Key
+
+Not supported in Browser because ... 
 
 ## Next Steps
 
