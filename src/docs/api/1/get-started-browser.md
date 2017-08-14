@@ -4,7 +4,7 @@
 
 ## Browser
 
-```javascript
+```html
 <head>
   <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
   <script src="https://3d.io/releases/3dio-js/1.x.x/3dio.min.js"></script>
@@ -18,7 +18,7 @@
 
 Using 3dio without A-Frame is also possible. This is particullary useful if you don not need to render a 3D view: 
 
-```javascript
+```html
 <script src="https://3d.io/releases/3dio-js/1.x.x-beta/3dio.min.js"></script>
 <script>
   io3d.utils.ui.message.success('Hello World')
@@ -42,13 +42,13 @@ For some extended functionality with subscription based quotas a <a class="open-
 
 Specify your publishable API key in the 3dio script URL:
 
-```javascript
+```html
 <script src="https://3d.io/releases/3dio-js/1.x.x/3dio.min.js&pk=YOUR_PUBLISHABLE_API_KEY"></script>
 ```
 
 Alternatively you can set a publishable API key dynamically using the config method:
  
-```javascript
+```html
 <script src="https://3d.io/releases/3dio-js/1.x.x-beta/3dio.min.js"></script>
 <script>
   io3d.config({
