@@ -3,7 +3,7 @@ NAME: Walkthishouse
 TAGLINE: your custom 3d solutions
 DESCRIPTION: Aesthetics and Technology to 3D Design & Visualization Solutions for Developers, Real Estate Agents and Designers
 LOGO: https://storage.3d.io/535e624259ee6b0200000484/2017-08-14_15-50-19_0rsC7N/big.png
-LOGO_SIZE: 100 #percent
+LOGO_SIZE: 90 #percent
 LOGO_BG_COLOR: '#111'
 IMAGE:
 URL: http://www.walkthishouse.com/
