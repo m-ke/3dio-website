@@ -27,7 +27,7 @@ Questions? [Ask us on Stack Overflow.](https://stackoverflow.com/questions/tagge
 * [UI](ui.md)
 
 ## Distribution
-* Browser: https://3d.io/releases/
+* Browser: https://releases.3d.io
 * Node: https://www.npmjs.com/package/3dio
 
 ## Contribute
