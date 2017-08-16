@@ -6,8 +6,8 @@ Questions? [Ask us on Stack Overflow.](https://stackoverflow.com/questions/tagge
 ## Get Started
 * [Browser](get-started-browser.md)
 * [Node Server](get-started-node-server.md)
-* [Configs](configs.md)
-* [Authentication](authentication.md)
+* Configs
+* Authentication
 
 ## Products
 * [A-Frame components](aframe-components.md)
