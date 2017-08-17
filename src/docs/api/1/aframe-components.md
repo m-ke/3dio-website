@@ -11,7 +11,7 @@ This can be done with these components:
 ```html
 <head>
   <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-  <script src="https://releases.3d.io/3dio-js/1.x.x-beta/3dio.min.js"></script>
+  <script src="https://dist.3d.io/3dio-js/1.x.x-beta/3dio.min.js"></script>
 </head>
 <a-scene>
   <!-- furniture specified by furniture id -->
