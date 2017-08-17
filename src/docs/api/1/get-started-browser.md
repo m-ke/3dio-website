@@ -7,7 +7,7 @@
 ```html
 <head>
   <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
-  <script src="https://dist.3d.io/3dio-js/1.x.x/3dio.min.js"></script>
+  <script src="https://dist.3d.io/3dio-js/1.x.x-beta/3dio.min.js"></script>
 </head>
 <body>
   <script>
@@ -43,7 +43,7 @@ For some extended functionality with subscription based quotas a <a class="open-
 Specify your publishable API key in the 3dio script URL:
 
 ```html
-<script src="https://dist.3d.io/3dio-js/1.x.x/3dio.min.js&pk=YOUR_PUBLISHABLE_API_KEY"></script>
+<script src="https://dist.3d.io/3dio-js/1.x.x-beta/3dio.min.js&pk=YOUR_PUBLISHABLE_API_KEY"></script>
 ```
 
 Alternatively you can set a publishable API key dynamically using the config method:
