@@ -1,6 +1,6 @@
 # Get Started
 
-## Node
+## Node.js Server
 
 1. Install library from npm: `npm install 3dio --save`
 2. Use it your code base:
