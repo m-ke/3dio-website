@@ -16,7 +16,7 @@
 </body>
 ```
 
-Using 3dio without A-Frame is also possible. This is particullary useful if you don not need to render a 3D view: 
+Using 3dio without A-Frame is also possible. This is particulary useful if you don't need to render a 3D view: 
 
 ```html
 <script src="https://dist.3d.io/3dio-js/1.x.x-beta/3dio.min.js"></script>
@@ -27,7 +27,7 @@ Using 3dio without A-Frame is also possible. This is particullary useful if you 
 
 ## Package Manager Support
  
-We support Bower, Webpack, Require.js and simmilar. 3dio is packaged in UMD (Universal Module Definition) format so that it can be used as CommonJS or AMD module.
+We support Bower, Webpack, Require.js and similar. 3dio is packaged in UMD (Universal Module Definition) format so that it can be used as CommonJS or AMD module.
 
 1. Install library from npm `npm install 3dio --save`
 2. Use it your code base:
@@ -38,7 +38,7 @@ We support Bower, Webpack, Require.js and simmilar. 3dio is packaged in UMD (Uni
 
 ## Using Publishable API Keys
 
-For some extended functionality with subscription based quotas a <a class="open-publishable-api-keys-menu">publishable API key</a> is required. The [authetication docs](authentication.md) provide a detailed overview of what exactly you can do with publishable API keys. 
+For some extended functionality with subscription based quotas a <a class="open-publishable-api-keys-menu">publishable API key</a> is required. The [authentication docs](authentication.md) provide a detailed overview of what exactly you can do with publishable API keys. 
 
 Specify your publishable API key in the 3dio script URL:
 
@@ -68,7 +68,7 @@ io3d.config({
 
 ## Secret API Key
 
-Please do not use secret API keys in browser environments. Doing so would expose it to everybody. Secret API keys should be kept secret and used only in secure environments. expose your secret API key only to trusted 3rd parties.
+Please do not use secret API keys in browser environments. Doing so would expose it to everybody. Secret API keys should be kept secret and used only in secure environments. Expose your secret API key only to trusted 3rd parties.
 
 ## Next Steps
 
