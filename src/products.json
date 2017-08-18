@@ -57,7 +57,7 @@
     }
   },{
     "title": "Convert Floor Plans to 3D",
-    "icon": "icon-floor-plan-to-3d-conversion",
+    "icon": "icon-convert-floor-plans-to-3d",
     "category": "content",
     "description": null,
     "app": {
@@ -72,7 +72,7 @@
     }
   },{
     "title": "Publish 3D Models",
-    "icon": "icon-3d-import",
+    "icon": "icon-publish-3d-models",
     "category": "content",
     "description": null,
     "app": {
@@ -92,7 +92,7 @@
     }
   },{
     "title": "Export 3D Models",
-    "icon": "icon-3d-export",
+    "icon": "icon-export-3d-models",
     "category": "content",
     "description": null,
     "app": {
@@ -112,7 +112,7 @@
     }
   },{
     "title": "Import Matterport 3D Scans",
-    "icon": "icon-matterport-import",
+    "icon": "icon-import-matterport-scans",
     "category": "content",
     "description": null,
     "app": {
@@ -127,7 +127,7 @@
     }
   },{
     "title": "3D Asset Storage",
-    "icon": "icon-3d-asset-storage",
+    "icon": "icon-storage",
     "category": "content",
     "description": null,
     "app": {
@@ -187,8 +187,8 @@
       "methods": {}
     }
   },{
-    "title": "Lightmap Baking",
-    "icon": "icon-lightmap-baking",
+    "title": "Bake Lightmaps",
+    "icon": "icon-bake-lightmaps",
     "category": "content",
     "description": null,
     "app": {
@@ -203,8 +203,8 @@
       }
     }
   },{
-    "title": "3D Modifiers",
-    "icon": "icon-3d-modifiers",
+    "title": "Modify 3D Data",
+    "icon": "icon-modify-3d",
     "category": "content",
     "description": null,
     "app": {
