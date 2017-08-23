@@ -12,7 +12,7 @@ URL: https://www.hausvirtual.com/
 EMAIL: michael.h@cmscalgary.com
 COUNTRY: Canada
 CITY: Calgary
-LOCATION_LAT_LNG: 51.0486, 114.0708
+LOCATION_LAT_LNG: 51.0486, -114.0708
 SAMPLES:
     - TITLE: 3D Dollhouse Project
       DESCRIPTION: Our client had just broken ground in one of Calgary’s most desirable inner city neighbourhoods and was looking to sell their home before it was finished. In order to sell this home before it was finished and market it to potential home-buyers, we developed a fully furnished 3D dollhouse.
