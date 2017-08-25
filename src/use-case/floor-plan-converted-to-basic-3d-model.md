@@ -2,9 +2,9 @@
 
 3d.io converts 2D floor plans into beatiful interactive 3D models with ease. We offer [two quality standards](/floor-plan-to-3d-conversion.md):
 * **Basic 3D Models** provided by 3d.io 
-* **Professional 3D Models** provided by [certified partners](/partners.html)
+* **Premium 3D Models** provided by [certified partners](/partners.html)
 
-This page explains the process of creating a basic 3D model which is fully editable and can be upgraded to a [professional 3d model](/floor-plan-to-3d-conversion.md) later.
+This page explains the process of creating a basic 3D model which is fully editable and can be upgraded to a [premium 3d model](/floor-plan-to-3d-conversion.md) later.
 
 ## Input
 Currently we accept JPGs, PNGs, GIFs, and PDFs. We are working on other formats. Below is an example. Note that:
