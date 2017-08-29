@@ -16,7 +16,7 @@
 
 * Multiple floors stacked on top of each other
 
-**In any of those cases we will send a rejection message as response**
+**In any of those cases you will receive a rejection message as response.**
 
 **Apartments that don't match the Basic 3d Model Specifications can be ordered by a [Certified Partner of 3d.io](https://www.3d.io.com).**
 
