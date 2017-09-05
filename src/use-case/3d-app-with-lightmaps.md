@@ -5,17 +5,19 @@
 In this example we are walking through all the steps to get from a 2D floor plan to an interactive presentation of an office space. First, here's the result:
 
 <!-- Reference the app as an iframe -->
-<iframe style="width:100%; height:400px" src="https://app.3d.io/fQcn7u"></iframe>
+<iframe style="width:100%; height:400px" src="https://app.3d.io/tgzwxR"></iframe>
 <br>
 <br>
-[Go to this App and remix it](https://app.3d.io/fQcn7u)
+Go [fullscreen](https://app.3d.io/tgzwxR) or [open and remix!](https://appcreator.3d.io/tgzwxR)
 <br>
 <br>
+
+<!-- Description of how to do this -->
 <p>Now let's go ahead and build this from scratch!
 
 <h3> 1. Get a 3D Model from a 2D Floor Plan:</h3>
 - Go to your [Archilogic Dashboard](https://spaces.archilogic.com/dashboard) and order a Basic 3D Model by uploading a 2D floor plan
-- You'll receive something like this:
+- You'll receive a model which looks like this:
 <br>
 <a href="https://storage.3d.io/5a4fdff6-a40b-403d-817c-802305866599/2017-09-04_13-07-11_PfSVZT/basic-commercial-model.jpg">
 <img style="max-width: 300px;" src="https://storage.3d.io/5a4fdff6-a40b-403d-817c-802305866599/2017-09-04_13-07-11_PfSVZT/basic-commercial-model.jpg">
@@ -34,5 +36,7 @@ In this example we are walking through all the steps to get from a 2D floor plan
 - Click the "make a copy" icon on the top right in order to create your own app
 - Give your app a title
 - Reference your 3D model: copy/paste the URL of your 3D Model in the "Scene" box; the scene identifier will be automatically parsed from the string
-- Start customising your model! Add a panorama, change the background color, show your logo where you'd like, add a disclaimer, and on-and-on; visit the [A-Frame Docs](https://aframe.io/docs/0.6.0/introduction/) to see what's possible!
+- Start customising your model. Add a panorama, change the background color, show your logo where you'd like, add a disclaimer, and on-and-on; visit the [A-Frame Docs](https://aframe.io/docs/0.6.0/introduction/) to see what's possible
 - Share your app by copying the URL which is displayed above the model
+
+Note: we currently recommend using small- to medium-sized offices as performance can slow for very large models.
