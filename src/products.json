@@ -61,14 +61,11 @@
     "category": "content",
     "description": null,
     "app": {
-      "url": "https://spaces.archilogic.com/explore?popup=order"
+      "url": "https://io3d-floor-plan-app.herokuapp.com/"
     },
     "api": {
-      "name": "floorPlanTo3d",
-      "url": "https://docs.archilogic.com/en/api/reference/requestmodel",
-      "methods": {
-        "convert": { "requiresKey": true }
-      }
+      "name": "floorPlan",
+      "url": "https://github.com/archilogic-com/3dio-floor-plan-app"
     }
   },{
     "title": "Publish 3D Models",
