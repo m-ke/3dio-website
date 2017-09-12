@@ -48,7 +48,7 @@
     },
     "api": {
       "name": "homeStaging",
-      "url": null,
+      "url": "https://3d.io/docs/api/1/home-staging-ai.html",
       "methods": {
         "furnish": { "requiresKey": true },
         "shuffle": { "requiresKey": true },

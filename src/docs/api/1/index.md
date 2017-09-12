@@ -14,7 +14,7 @@ Questions? [Ask us on Stack Overflow.](https://stackoverflow.com/questions/tagge
 * [Storage](storage.md)
 * [Furniture](furniture.md)
 * Scene
-* Home staging AI
+* [Home staging AI](home-staging-ai.md)
 * Convert floor plan to 3D
 * Publish 3D model 
 * Export 3D model
