@@ -3,6 +3,9 @@
 Home Staging AI allows you to autmatically create furnishings for spaces.<br>
 Walls, doors, windows, kitchens aswell as circulation are taken into account to generate the results.
 
+Home Staging API calls need an API key<br>
+[see here how to get one](https://3d.io/docs/api/1/get-started-browser.html#using-publishable-api-keys)
+
 ## Furnish
 
 ### Input
@@ -18,15 +21,22 @@ io3d.scene.get(<id>)
 ```
 
 * a custom method<br>
-  Make sure to normalize it before using it.<br>
-  [example](https://github.com/archilogic-com/3dio-js/tree/master/examples-browser/staging/stage-room-ar)
+  Make sure to normalize it before using it.<br><br>
+  [example on github](https://github.com/archilogic-com/3dio-js/tree/master/examples-browser/staging/stage-room-ar)
 ```javascript
 mySceneStructureGenerator()
   .then(normalizeSceneStructure)
   .then(sceneStructure => { })
 ```
 
-* a color coded floor plan
+* a color coded floor plan<br>
+  provide a scaled pixel image<br>
+  <img title="floor-plan" src="https://storage.3d.io/132f8fd0-f7e0-432a-ad21-732f3307e77e/170912-1650-8w2re2/floorplan.jpg" style="width:250px;"><br>
+  colors:<br>
+  walls #000<br>
+  windows #00f<br>
+  doors #f00<br><br>
+  [example on github](https://github.com/archilogic-com/3dio-js/blob/master/examples-browser/staging/stage-floor-plan/index.html)
 ```javascript
 io3d.floorPlan.recognize(#selector)
   .then(sceneStructure => { })
