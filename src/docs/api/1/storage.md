@@ -14,6 +14,8 @@ Every file has its own unique storage key consisting of the user ID and a custom
 |                                |            |
 | ------------ dir ------------- |            |
 |                                             |
+|                        | --- storageId ---- |
+|                                             |
 | ------------------- key ------------------- |
 ```
 
@@ -28,6 +30,47 @@ https://storage.3d.io/535e624259ee6b0200000484/example/floorplan.jpg
 Access file directly without CDN caching via `storage-nocdn.3d.io` :
 
 https://storage-nocdn.3d.io/535e624259ee6b0200000484/example/floorplan.jpg
+
+## Storage characteristics
+
+| Authentication type | Permanent | Choose the storageId |
+| --- | --- | --- |
+| No authentication | ❌ | ❌ |
+| [Publishable key]() | ✅ | ❌ |
+| [Secret key]() | ✅ | ✅ |
+
+### Anonymous uploads
+
+You are free to upload content without logging in, but you won't be able to pick the storage ID, instead we will generate a random storageId for you.
+Also, **anonymous uploads will only be stored for 7 days**.
+If you need a permanent upload, please use one of your API keys (see below).
+
+```javascript
+var file = new Blob(['Hello World'])
+file.name = 'hello.txt'
+
+io3d.storage.put(file).then(function (key) {
+  console.log('Your new file key is:', key)
+})
+```
+
+### Permanent uploads
+
+You can upload files to be permanently stored by using your [publishable key]().
+
+```javascript
+var file = new Blob(['Hello World'])
+file.name = 'hello.txt'
+
+io3d.storage.put(file).then(function (key) {
+  console.log('Your new file key is:', key)
+})
+```
+
+### Permanent uploads with a custom key
+
+You can upload files with a custom key of your choice under your userId using your [secret key]() for the upload or use `io3d.auth.login`.
+
 
 ## File Upload
 
