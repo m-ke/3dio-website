@@ -247,6 +247,7 @@ function remapLinks (html, inputFile) {
   const urlPath = urlPathRoot+'/'+inputFile.path.substr(inputFile.base.length)
   const urlPathDir = (path.dirname(urlPath)+'/').replace('//','/')
   return html.replace(aTagInHtmlRegex, function (tag, url) {
+    if(!url) return
     if (url.substr(0, 11) === 'javascript:') {
       throw 'Javascript inside href attribute will not work on Firefox:\n'+tag+'\nFile: '+inputFile.path
       return tag
