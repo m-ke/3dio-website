@@ -36,8 +36,8 @@ https://storage-nocdn.3d.io/535e624259ee6b0200000484/example/floorplan.jpg
 | Authentication type | Permanent | Choose the storageId |
 | --- | --- | --- |
 | No authentication | ❌ | ❌ |
-| [Publishable key]() | ✅ | ❌ |
-| [Secret key]() | ✅ | ✅ |
+| [Publishable key](https://3d.io/docs/api/1/get-started-node-server.html#using-publishable-api-keys) | ✅ | ❌ |
+| [Secret key](https://3d.io/docs/api/1/get-started-node-server.html#using-secret-api-keys) | ✅ | ✅ |
 
 ### Anonymous uploads
 
