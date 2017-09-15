@@ -1,6 +1,6 @@
 # Data3d
 
-Web optimized format for 3d geometry and materials
+Web optimized format for 3d geometry and materials.
 
 ## Goals by Priority
 
@@ -10,6 +10,9 @@ Web optimized format for 3d geometry and materials
 * Human readable
 
 ## Data Structure
+
+Units are meters and radians if not specified otherwise.
+
 ```javascript
 var data3d = {
     // corresponding node uuid in plan structure
@@ -35,13 +38,13 @@ var data3d = {
         // position of the entire mesh (optional)
         position: [ 0, 0, 0 ],
         // orientation of the entire mesh in angles radian
-        rotation: [ 0, 0, 0 ],
+        rotRad: [ 0, 0, 0 ],
         // scale
         scale: [ 1, 1, 1 ], // optional, fallback fo [1,1,1]
         // position of UV1 vertices (not yet implemented)
         uvsPosition: [ 0, 0, 0 ],
         // orientation of UV1 vertices (not yet implemented)
-        uvsRotDeg: [ 0, 0, 0 ],
+        uvsRotRad: [ 0, 0, 0 ],
         side: 'front', // face side. can be: front, back, both // fallback: 'front'
       }
     },
