@@ -28,7 +28,7 @@ block content
     mixin partner(partner)
       .four.columns
         .partner
-          a(href='/partner/'+partner.filename, onClick="ga('send', 'event', '3dio_partners', 'click', '"+partner"');")
+          a(href='/partner/'+partner.filename, onClick="ga('send', 'event', '3dio_partners', 'click',{'page':'"+ partner.filename +"'});")
             //-p= partner.TAGLINE
             .logo-container
               .bg(style=`background:${partner.LOGO_BG_COLOR};`)
