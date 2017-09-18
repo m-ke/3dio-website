@@ -29,6 +29,7 @@ block content
       .four.columns
         .partner
           a(href='/partner/'+partner.filename)
+          a(onClick="ga('send', 'event', '3dio_partners', 'click', {'page': '"+ partner + "'});")
             //-p= partner.TAGLINE
             .logo-container
               .bg(style=`background:${partner.LOGO_BG_COLOR};`)
