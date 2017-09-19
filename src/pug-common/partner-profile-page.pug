@@ -21,7 +21,7 @@ block content
         if partner.DESCRIPTION
           .description!=partner.DESCRIPTION
         .badges
-          a(href='mailto:'+partner.EMAIL, target='_blank', onClick="ga('send', 'event', '3dio_partners_page', 'click_email','"+ partner.EMAIL +"');").badge.contact Email
+          a(href='mailto:'+partner.EMAIL).badge.contact Email
           if partner.URL
             a(href=partner.URL, target='_blank', onClick="ga('send', 'event', '3dio_partners_page', 'click_url','"+ partner.URL +"');").badge.website Website
         if partner.IMAGE
@@ -81,4 +81,4 @@ block content
     .row
       .twelve.columns
         p
-          a(href='/floor-plan-to-3d-conversion.md') Read more about how Certified Partners and 3d.io work together
+          a(href='/floor-plan-to-3d-conversion.md') Read more about how Certified Partners and 3d.io work together 
