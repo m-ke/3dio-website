@@ -38,5 +38,3 @@ Go [fullscreen](https://app.3d.io/tgzwxR) or [open and remix!](https://appcreato
 - Reference your 3D model: copy/paste the URL of your 3D Model in the "Scene" box; the scene identifier will be automatically parsed from the string
 - Start customising your model. Add a panorama, change the background color, show your logo where you'd like, add a disclaimer, and on-and-on; visit the [A-Frame Docs](https://aframe.io/docs/0.6.0/introduction/) to see what's possible
 - Share your app by copying the URL which is displayed above the model
-
-Note: we currently recommend using small- to medium-sized offices as performance can slow for very large models.
