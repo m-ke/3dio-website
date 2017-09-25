@@ -139,6 +139,7 @@ function generatePartnerProfilePages () {
   return gulp.src(src.partnerProfiles).pipe(through2.obj((inputFile, enc, cb) => {
     // process files only
     if (!inputFile.isBuffer()) return
+    process.stdout.write('.')
     // decode text from vinyl object
     let markdownText = inputFile.contents.toString(enc)
     const urlPath = urlPathRoot+'/'+inputFile.path.substr(inputFile.base.length)
@@ -185,6 +186,7 @@ function generatePartnerProfilePages () {
 
 function renderMarkdown () {
   return gulp.src(src.markdown).pipe(through2.obj((inputFile, enc, cb) => {
+    process.stdout.write('.')
     // process files only
     if (!inputFile.isBuffer()) return
     // decode text from vinyl object
