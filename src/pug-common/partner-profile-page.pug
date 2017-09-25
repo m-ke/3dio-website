@@ -23,7 +23,7 @@ block content
         .badges
           a(href='mailto:'+partner.EMAIL target='_blank' onclick="ga('send', 'event', '3dio_partner_page', 'click_email','"+partner.EMAIL+"');").badge.contact Email
           if partner.URL
-            a(href=partner.URL target='_blank' onclick="ga('send', 'event', '3dio_partner_page', 'click_url','"+partner.WEBSITE+"');").badge.website Website
+            a(href='#{partner.URL}' target='_blank' onclick="ga('send', 'event', '3dio_partner_page', 'click_url','"+partner.URL+"');").badge.website Website
         if partner.IMAGE
           img(src=partner.IMAGE).image
 

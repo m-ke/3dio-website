@@ -6,7 +6,7 @@ LOGO: https://dnvf9esa6v418.cloudfront.net/anonymous/2017-07-27_20-15-08_T7vpHL/
 LOGO_SIZE: 75 #percent
 LOGO_BG_COLOR: '#231f20'
 IMAGE:
-WEBSITE: http://todagroup.com/archilogic.php
+URL: http://todagroup.com/archilogic.php
 EMAIL: orestk@gmail.com
 COUNTRY: Ukraine
 CITY:

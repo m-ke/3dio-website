@@ -8,7 +8,7 @@ LOGO: https://storage.3d.io/535e624259ee6b0200000484/2017-08-11_18-48-29_p3WhnE/
 LOGO_SIZE: 90 #percent
 LOGO_BG_COLOR: '#ddd'
 IMAGE:
-WEBSITE: https://www.hausvirtual.com/
+URL: https://www.hausvirtual.com/
 EMAIL: michael.h@cmscalgary.com
 COUNTRY: Canada
 CITY: Calgary

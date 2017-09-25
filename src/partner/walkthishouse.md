@@ -6,7 +6,7 @@ LOGO: https://storage.3d.io/535e624259ee6b0200000484/2017-08-14_15-50-19_0rsC7N/
 LOGO_SIZE: 90 #percent
 LOGO_BG_COLOR: '#111'
 IMAGE:
-WEBSITE:
+URL:
 EMAIL: info@walkthishouse.com
 COUNTRY: USA
 CITY: Hoboken NJ
