@@ -8,7 +8,7 @@ LOGO: https://storage.3d.io/535e624259ee6b0200000484/2017-08-11_18-48-29_p3WhnE/
 LOGO_SIZE: 90 #percent
 LOGO_BG_COLOR: '#ddd'
 IMAGE:
-URL: https://www.hausvirtual.com/
+WEBSITE: https://www.hausvirtual.com/
 EMAIL: michael.h@cmscalgary.com
 COUNTRY: Canada
 CITY: Calgary
@@ -22,6 +22,6 @@ SAMPLES:
     - TITLE: Landing Page Development
       DESCRIPTION: A client of ours had requested a full marketing package from our team that included a 3D scan, custom landing page, and lead-generation coupled with PPC in order to sell a home that had been sitting on the market for over 6 months. The landing page generated additional leads for other homes in addition to out-of-city interest for the client’s business.
       IMAGE: https://storage.3d.io/5a4fdff6-a40b-403d-817c-802305866599/2017-08-10_20-53-48_cBrI4i/Landing_Page.png
-      URL: 
+      URL:
       PRICE: 500
 </script>

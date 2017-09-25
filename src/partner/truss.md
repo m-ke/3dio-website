@@ -6,7 +6,7 @@ LOGO:https://storage.3d.io/535e624259ee6b0200000484/2017-07-27_11-36-10_89FsYk/T
 LOGO_SIZE: 73 #percent
 LOGO_BG_COLOR:
 IMAGE:
-URL:
+WEBSITE:
 EMAIL: jovanswork@gmail.com
 COUNTRY: Serbia
 CITY: Belgrade

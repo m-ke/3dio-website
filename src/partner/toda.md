@@ -6,7 +6,7 @@ LOGO: https://dnvf9esa6v418.cloudfront.net/anonymous/2017-07-27_20-15-08_T7vpHL/
 LOGO_SIZE: 75 #percent
 LOGO_BG_COLOR: '#231f20'
 IMAGE:
-URL: http://todagroup.com/archilogic.php
+WEBSITE: http://todagroup.com/archilogic.php
 EMAIL: orestk@gmail.com
 COUNTRY: Ukraine
 CITY:
@@ -23,10 +23,10 @@ SAMPLES:
       URL: https://goo.gl/PBeyQE
       PRICE: 1350
     - TITLE: The Big Bang Theory
-      DESCRIPTION: This 3D Model has been made after the American sitcom The Big Bang Theory. It represents Sheldon & Leonard's apartment as well as Penny's. 
+      DESCRIPTION: This 3D Model has been made after the American sitcom The Big Bang Theory. It represents Sheldon & Leonard's apartment as well as Penny's.
       IMAGE: https://dnvf9esa6v418.cloudfront.net/535e624259ee6b0200000484/2017-07-27_09-27-38_xy4IX5/BBT_320-160.jpg
       URL: https://goo.gl/EH3EZa
-      PRICE: 1200  
+      PRICE: 1200
     - TITLE: Interactive visualization
       DESCRIPTION: Exterior and interior visualization project realized in unity3d. Designed for touch screen kiosks and walls, for mobiles Android and and desktops.
       IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-07-27_13-35-26_SzUmbi/toda_interactive_visualization_320_160.png

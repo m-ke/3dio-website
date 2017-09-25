@@ -7,7 +7,7 @@ LOGO: https://storage.3d.io/535e624259ee6b0200000484/2017-05-26_15-57-44_Uj5waE/
 LOGO_SIZE: 90 #percent
 LOGO_BG_COLOR: '#ddd'
 IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-04-12_07-50-45_3Y00jh/hero3.png
-URL: https://www.3dspaces.com.au/viznavigator-archilogic/
+WEBSITE: https://www.3dspaces.com.au/viznavigator-archilogic/
 EMAIL: contact@3dspaces.com.au
 COUNTRY: Australia
 CITY: Sydney
