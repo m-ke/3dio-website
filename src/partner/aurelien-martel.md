@@ -17,8 +17,8 @@ SAMPLES:
       IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-07-27_11-21-22_27sLl4/Mr.Robot_320_160.jpg
       URL: https://goo.gl/i1QhJx
       PRICE: 1750
-    - TITLE: Sherlock 
-      DESCRIPTION: Handcrafted 3D model of an interior space inspired by the BBC series Sherlock. 
+    - TITLE: Sherlock
+      DESCRIPTION: Handcrafted 3D model of an interior space inspired by the BBC series Sherlock.
       IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-07-27_11-42-14_eWAQaA/Sherlock_Holmes_320_160.jpg
       URL: https://goo.gl/KQ3Syu
       PRICE: 1750

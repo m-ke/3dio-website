@@ -6,10 +6,10 @@ LOGO: https://storage.3d.io/535e624259ee6b0200000484/2017-08-14_15-50-19_0rsC7N/
 LOGO_SIZE: 90 #percent
 LOGO_BG_COLOR: '#111'
 IMAGE:
-URL: http://www.walkthishouse.com/
+URL:
 EMAIL: info@walkthishouse.com
 COUNTRY: USA
-CITY: Hoboken NJ 
+CITY: Hoboken NJ
 LOCATION_LAT_LNG: 40.7424928,-74.0321353
 SAMPLES:
     - TITLE: Multi Storey Villa
@@ -17,7 +17,7 @@ SAMPLES:
       IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-08-14_15-36-30_v76WFA/w1.jpg
       URL: https://goo.gl/HZKwjA
       PRICE: 1850
-    - TITLE: Interior Restaruant Space 
+    - TITLE: Interior Restaruant Space
       DESCRIPTION: "Handcrafted 3D model of a bar and restaruant interior"
       IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-08-14_15-36-01_ivso1k/w2.jpg
       URL: https://goo.gl/VtN9hG
