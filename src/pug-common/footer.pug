@@ -66,12 +66,9 @@
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
     ga('create', 'UA-46441340-2', 'auto');
     ga('send', 'pageview');
-
-  //- HubSpot Tracking script
-  script(type='text/javascript' id='hs-script-loader' async defer src='//js.hs-scripts.com/2805374.js')
-  
+    
   //- Hotjar Heatmap Tracking
-  script.
+  script(type='text/javascript').
   (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:636151,hjsv:5};
@@ -80,3 +77,6 @@
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
     })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+
+  //- HubSpot Tracking script
+  script(type='text/javascript' id='hs-script-loader' async defer src='//js.hs-scripts.com/2805374.js')
