@@ -21,9 +21,9 @@ block content
         if partner.DESCRIPTION
           .description!=partner.DESCRIPTION
         .badges
-          a(href='mailto:'+partner.EMAIL target='_blank' onclick="ga('send', 'event', '3dio_partner_page', 'click_email','"+partner.EMAIL+"');").badge.contact Email
+          a(href='mailto:'+partner.EMAIL target='_blank' onclick="ga('send', 'event', '3dio_partner_page', 'click_email','"+ partner.NAME +"');").badge.contact Email
           if partner.URL
-            div(onclick="ga('send', 'event', '3dio_partner_page', 'click_url','"+partner.URL+"');" style="display:inline")
+            div(onclick="ga('send', 'event', '3dio_partner_page', 'click_url','"+ partner.NAME +"');" style="display:inline")
               a(href=partner.URL target="_blank").badge.website Website
         if partner.IMAGE
           img(src=partner.IMAGE).image
@@ -60,7 +60,7 @@ block content
                   I'm interested in an offer for a project similar to "${sample.TITLE}" (Pricing starting at $ ${sample.PRICE}).
 
                   Best wishes`)
-                a(href=orderLink target='_blank' onClick="ga('send', 'event', '3dio_partner_page','click_sample','"+partner.EMAIL+"');")
+                a(href=orderLink target='_blank' onClick="ga('send', 'event', '3dio_partner_page','click_sample','"+ partner.NAME +"');")
                   .order Order for $ #{sample.PRICE}+
 
         //- print rows of 3 examples
