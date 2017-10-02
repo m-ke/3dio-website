@@ -56,8 +56,8 @@ this will take the first space it finds
 and furnish it with Living and Dining
 output is the sceneStructure of the furnishing
 
-* display result in a-frame
-do get these into a-frame we can use the getAframeElementsFromSceneStructure method
+* display result in A-Frame
+do get these into A-Frame we can use the getAframeElementsFromSceneStructure method
 ```javascript
   var sceneEl = document.querySelector('a-scene')
   var elements = io3d.scene.getAframeElementsFromSceneStructure(sceneStructure)
