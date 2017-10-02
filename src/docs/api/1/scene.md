@@ -3,7 +3,8 @@
 The scene API allows users to access Archilogic's scene structure and for instance convert it to A-Frame Elements.
 
 Content:
-* [scene structure](#scene-structure)
+* [Scene Id](#scene-id)
+* [Scene Structure](#scene-structure)
 * [`getStructure(sceneId)`](#get-structure)
 * [`getAframeElements(sceneId)`](#get-a-frame-elements)
 * [`getAframeElementsFromSceneStructure(sceneId)`](#get-a-frame-elements-from-scene-structure)
@@ -11,7 +12,7 @@ Content:
 * [`validateSceneStructure(sceneStructure)`](#validate-scene-structure)
 * [`getViewerUrl(sceneId)`](#get-viewer-url)
 
-## SceneId
+## Scene Id
 
 Each scene has it's unique id which is generally refered to as `sceneId`.
 
