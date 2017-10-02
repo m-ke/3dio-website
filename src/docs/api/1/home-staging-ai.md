@@ -16,7 +16,7 @@ SceneStructure can be taken / generated from:
 * an Archilogic model
 via:
 ```javascript
-io3d.scene.getStructure(<id>)
+io3d.scene.getStructure(sceneId)
   .then(sceneStructure => { })
 ```
 for further reference visit the documentation of the [scene API](scene.md)
@@ -30,39 +30,34 @@ mySceneStructureGenerator()
   .then(sceneStructure => { })
 ```
 
-* a color coded floor plan<br>
-  provide a scaled pixel image<br>
-  <img title="floor-plan" src="https://storage.3d.io/132f8fd0-f7e0-432a-ad21-732f3307e77e/170912-1650-8w2re2/floorplan.jpg" style="width:250px;"><br>
-  colors:<br>
-  walls #000<br>
-  windows #00f<br>
-  doors #f00<br><br>
-  [example on github](https://github.com/archilogic-com/3dio-js/blob/master/examples-browser/staging/stage-floor-plan/index.html)
-```javascript
-io3d.floorPlan.recognize(#selector)
-  .then(sceneStructure => { })
-```
+* [a color coded floor plan](convert-floor-plan-to-3d.html#recognize)
 
 * IFC import (coming soon)
 
 ### Usage
 
-* Simple use case
+* Simple use case calling homeStaging inside A-Frame
+
 ```javascript
-io3d.staging.furnish(sceneStructure)
-  .then(result => { })
+const sceneEl = document.querySelector('a-scene')
+
+io3d.scene.getStructure(sceneId)
+  // first floor is selected 
+  .then(io3d.staging.furnish)
+  // the furnish call outputs sceneStructure of the furnishing proposal
+  .then(sceneStructure => { 
+    // do get these into A-Frame we can use 
+    // the getAframeElementsFromSceneStructure method
+    var elements = io3d.scene.getAframeElementsFromSceneStructure(sceneStructure)
+    // add elements to the scene
+    elements.forEach(el => {
+      sceneEl.appendChild(el)
+    })
+  })
+  .catch(error => {
+    console.log(error)
+  })
 ```
 this will take the first space it finds
 and furnish it with Living and Dining
 output is the sceneStructure of the furnishing
-
-* display result in A-Frame
-do get these into A-Frame we can use the getAframeElementsFromSceneStructure method
-```javascript
-  var sceneEl = document.querySelector('a-scene')
-  var elements = io3d.scene.getAframeElementsFromSceneStructure(sceneStructure)
-  // add elements to the scene
-  elements.forEach(el => {
-    sceneEl.appendChild(el)
-  })
-```

@@ -65,7 +65,7 @@
     },
     "api": {
       "name": "floorPlan",
-      "url": "https://github.com/archilogic-com/3dio-floor-plan-app"
+      "url": "https://3d.io/docs/api/1/convert-floor-plan-to-3d.html"
     }
   },{
     "title": "Publish 3D Models",
