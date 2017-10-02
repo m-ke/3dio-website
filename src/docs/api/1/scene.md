@@ -7,7 +7,7 @@ Content:
 * [Scene Structure](#scene-structure)
 * [`getStructure(sceneId)`](#get-structure)
 * [`getAframeElements(sceneId)`](#get-a-frame-elements)
-* [`getAframeElementsFromSceneStructure(sceneId)`](#get-a-frame-elements-from-scene-structure)
+* [`getAframeElementsFromSceneStructure(sceneStructure)`](#get-a-frame-elements-from-scene-structure)
 * [`normalizeSceneStructure(sceneStructure)`](#normalize-scene-structure)
 * [`validateSceneStructure(sceneStructure)`](#validate-scene-structure)
 * [`getViewerUrl(sceneId)`](#get-viewer-url)
@@ -83,7 +83,7 @@ io3d.scene.getAframeElements(sceneId)
 
 ### Get A-Frame Elements From Scene Structure
 
-`io3d.scene.getAframeElementsFromSceneStructure()` converts scene structure into A-Frame DOM elements
+`io3d.scene.getAframeElementsFromSceneStructure(sceneStructure)` converts scene structure into A-Frame DOM elements
 This is needed when working for instance with our [Home Staging AI](home-staging-ai.md)
 The sample converts a furniture item described in scene structure into an A-Frame entity using the [io3d-furniture](aframe-components.html#io3d-furniture) component
 ```
@@ -177,7 +177,7 @@ Error codes:
 
 returns Archilogic Viewer Url from a scene Id
 ```js
-io3d.scene.getViewerUrl(5dc58829-ecd3-4b33-bdaf-f798b7edecd4)
+io3d.scene.getViewerUrl('5dc58829-ecd3-4b33-bdaf-f798b7edecd4')
 ```
 returns
 
