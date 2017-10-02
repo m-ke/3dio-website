@@ -1,5 +1,7 @@
 # Scene API
 
+The scene API allows users to access Archilogic's scene structure and for instance convert it to A-Frame Elements.
+
 Content:
 * [scene structure](#scene-structure)
 * [`getStructure(sceneId)`](#get-structure)
@@ -9,9 +11,9 @@ Content:
 * [`validateSceneStructure(sceneStructure)`](#validate-scene-structure)
 * [`getViewerUrl(sceneId)`](#get-viewer-url)
 
-The scene API allows users to access Archilogic's scene structure and for instance convert it to A-Frame Elements.<br>
-The scene structure is a JSON based scene format used in the [Archilogic editor](https://spaces.archilgoc.com/3d) to describe scenes.
-Each scene has it's unique id which is the `sceneId`.
+## SceneId
+
+Each scene has it's unique id which is generally refered to as `sceneId`.
 
 You can get the `sceneId` of an Archilogic model for instance from the url:
 ```bash
@@ -23,6 +25,8 @@ https://spaces.archilogic.com/3d/archilogic/zgkeizhc?modelResourceId=5dc58829-ec
                                                                     |-------------scene-id---------------|
 ```
 ## Scene Structure
+
+The scene structure is a JSON based scene format used in the [Archilogic editor](https://spaces.archilgoc.com/3d) to describe scenes.
 
 example of a simple scene structure snippet describing a furniture item:
 ```json
