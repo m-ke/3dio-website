@@ -6,6 +6,7 @@ The following components are available:
 
 * [`io3d-data3d`](#io3d-data3d) to display 3D models.
 * [`io3d-furniture`](#io3d-furniture) to display furniture.
+* [`io3d-lighting`](#io3d-lighting) change the default light setup.
 * [`tour`](#tour) to create camera tours.
 
 ## What can be done with the components
@@ -153,6 +154,30 @@ console.log(shelf.data.material_Wood) // "European Oak"
 ```
 
 The material properties follow the naming scheme "material_" followed by the furniture part they are associated with.
+
+## io3d-lighting
+
+Using `io3d-lighting` component replaces the default A-Frame lighting scene and adds new preset
+
+| Parameter | Description | Default value |
+| --- | --- | --- |
+| `preset` | Choose from different presets (currently only `studio` is available) | `studio` |
+| `intensity` | Intensity multiplier. | `1` |
+| `saturation` | Saturation multiplier. | `1` |
+
+### Usage:
+
+```html
+<a-scene io3d-lighting>
+</a-scene>
+```
+
+### Comparison
+
+* A-Frame default lighting
+![A-Frame default](https://storage.3d.io/97fa0bf7-1405-4fe3-a2be-49d2101d4121/2017-10-02_15-56-45_VAVhxX/A-Frame-default.png)
+* Studio preset
+![Studio Preset](https://storage.3d.io/97fa0bf7-1405-4fe3-a2be-49d2101d4121/2017-10-02_15-57-06_OFrK8z/studio-preset.png)
 
 ## tour
 
