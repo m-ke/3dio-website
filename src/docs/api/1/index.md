@@ -13,7 +13,7 @@ Questions? [Ask us on Stack Overflow.](https://stackoverflow.com/questions/tagge
 * [A-Frame components](aframe-components.md)
 * [Storage](storage.md)
 * [Furniture](furniture.md)
-* Scene
+* [Scene](scene.md)
 * [Home staging AI](home-staging-ai.md)
 * Convert floor plan to 3D
 * Publish 3D model 

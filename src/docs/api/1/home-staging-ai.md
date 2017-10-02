@@ -19,6 +19,7 @@ via:
 io3d.scene.getStructure(<id>)
   .then(sceneStructure => { })
 ```
+for further reference visit the documentation of the [scene API](scene.md)
 
 * a custom method<br>
   Make sure to normalize it before using it.<br><br>

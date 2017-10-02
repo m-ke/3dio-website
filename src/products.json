@@ -160,11 +160,11 @@
     "category": "content",
     "description": null,
     "app": {
-      "url": null
+      "url": "https://spaces.archilogic.com/dashboard"
     },
     "api": {
       "name": "scene",
-      "url": null,
+      "url": "https://3d.io/docs/api/1/scene.html",
       "methods": {
         "list": { "requiresKey": "optional" },
         "read": { "requiresKey": "optional" }
