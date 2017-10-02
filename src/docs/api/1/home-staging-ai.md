@@ -16,7 +16,7 @@ SceneStructure can be taken / generated from:
 * an Archilogic model
 via:
 ```javascript
-io3d.scene.get(<id>)
+io3d.scene.getStructure(<id>)
   .then(sceneStructure => { })
 ```
 
@@ -56,10 +56,10 @@ and furnish it with Living and Dining
 output is the sceneStructure of the furnishing
 
 * display result in a-frame
-do get these into a-frame we can use the getHtmlFromSceneStructure method
+do get these into a-frame we can use the getAframeElementsFromSceneStructure method
 ```javascript
   var sceneEl = document.querySelector('a-scene')
-  var elements = io3d.scene.getHtmlFromSceneStructure(sceneStructure)
+  var elements = io3d.scene.getAframeElementsFromSceneStructure(sceneStructure)
   // add elements to the scene
   elements.forEach(el => {
     sceneEl.appendChild(el)
