@@ -7,7 +7,7 @@ Questions? [Ask us on Stack Overflow.](https://stackoverflow.com/questions/tagge
 * [Browser](get-started-browser.md)
 * [Node Server](get-started-node-server.md)
 * Configs
-* Authentication
+* [Authentication](authentication.md)
 
 ## Products
 * [A-Frame components](aframe-components.md)
@@ -15,7 +15,7 @@ Questions? [Ask us on Stack Overflow.](https://stackoverflow.com/questions/tagge
 * [Furniture](furniture.md)
 * [Scene](scene.md)
 * [Home staging AI](home-staging-ai.md)
-* Convert floor plan to 3D
+* [Convert floor plan to 3D](convert-floor-plan-to-3d.md)
 * Publish 3D model 
 * Export 3D model
 * Import matterport (3D scan)
