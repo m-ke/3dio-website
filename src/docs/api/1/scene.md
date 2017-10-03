@@ -76,7 +76,15 @@ To add an Archiogic scene to your A-Frame scene you can do:
 ```js
 const sceneEl = document.querySelector('a-scene')
 io3d.scene.getAframeElements(sceneId)
-  .then(element => {
+  .then(elements => {
+    // this will give us two elements
+    // The first is the actual scene according to the scene structure hierarchy
+    // The second is the camera with potential waypoints that where defined in the scene structure
+    // you can leverage the waypoints using our A-Frame tour component
+    elements.forEach((el) => {
+      // add elements to the scene
+      sceneEl.appendChild(el)
+    })
     sceneEl.appendChild(element)
   })
 ```
