@@ -203,9 +203,10 @@ block content
         tr
           td.desc
           td.free
-            a.open-dev-dashboard.cta Get API Key
+            // btn text changes to 'Get API Key' when logged in
+            a.open-dev-dashboard.cta.subscribe-api-btn Sign Up
           td.pro
-            .cta-coming-soon Coming Soon
+            a(href='https://spaces.archilogic.com/subscriptions').cta Upgrade
           td.bus
             .cta-coming-soon Coming Soon
 
@@ -261,3 +262,13 @@ block content
 
         //- p
         //-  a(href='contributors.md') Full contributor list
+
+    script.
+      // change the explore subscription cta text depending on login status
+      io3d.utils.auth.session$.subscribe(function (session) {
+        if (session.isAuthenticated) {
+          $('.subscribe-api-btn')[0].innerHTML = 'Get API Key'
+        } else {
+          $('.subscribe-api-btn')[0].innerHTML = 'Sign Up'
+        }
+      })
