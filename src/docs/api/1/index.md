@@ -16,7 +16,7 @@ Questions? [Ask us on Stack Overflow.](https://stackoverflow.com/questions/tagge
 * [Scene](scene.md)
 * [Home staging AI](home-staging-ai.md)
 * [Convert floor plan to 3D](convert-floor-plan-to-3d.md)
-* Publish 3D model 
+* Import 3D model 
 * Export 3D model
 * Import matterport (3D scan)
 * Materials
