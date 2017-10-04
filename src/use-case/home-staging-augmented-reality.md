@@ -1,4 +1,4 @@
-# Bringing Augemented Reality to the web
+# Bringing Augmented Reality to the web
 
 Augmented Reality opens up entirely new ways of user interaction.
 Thanks to ARKit (native iOS implementation by Apple) and ARCore ( Google Android pendant ) Augmented Reality is finally becoming what is was promised to be some time ago.
