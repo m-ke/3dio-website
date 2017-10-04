@@ -291,7 +291,7 @@ If the transition should be immediate, you can set `move: 0` to make the movemen
 
 ## gblock
 
-Loads Google Blocks glTFs models hosted on [https://vr.google.com/blocks](). The only parameter is the URL of a specific google blocks model.
+Loads Google Blocks glTFs models hosted on [https://vr.google.com/blocks](https://vr.google.com/blocks). The only parameter is the URL of a specific google blocks model.
 
 ### Example
 ```html
