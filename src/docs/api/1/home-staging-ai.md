@@ -1,14 +1,17 @@
 # Home Staging AI
 
 Home Staging AI allows you to autmatically create furnishings for spaces.<br>
-Walls, doors, windows, kitchens aswell as circulation are taken into account to generate the results.
 
 Home Staging API calls need an API key<br>
 [see here how to get one](https://3d.io/docs/api/1/get-started-browser.html#using-publishable-api-keys)
 
-## Furnish
+## Get Furnishings
 
-### Input
+`io3d.staging.getFurnishings(sceneStructure, options)` computes furnishing proposals for residential spaces based on the constraints defined in the sceneStructure.
+
+Walls, doors, windows, kitchens and fixed closets aswell as circulation are taken into account to place furniture items.
+
+### Scene Structure
 
 The home staging methods consume sceneStructure as input.
 SceneStructure can be taken / generated from:
@@ -34,19 +37,25 @@ mySceneStructureGenerator()
 
 * IFC import (coming soon)
 
-### Usage
 
-* Simple use case calling homeStaging inside A-Frame
+### Options:
+
+| Parameter | Description | Default |
+| --- | --- | --- |
+| `spaceId` | Id of the space that will be furnished. Spaces are represented by polyfloors. To get a specific space, get the polyfloor object in the sceneStructure. | the first polyfloor in the sceneStructure is taken as default |
+| `label` | Describes the furnishing type. Possible values:<br>`dining`<br>`dining_living`<br>`living`<br>`bedroom`<br>`homeOffice` | `dining_living` |
+
+### Simple example
 
 ```javascript
 const sceneEl = document.querySelector('a-scene')
 
 io3d.scene.getStructure(sceneId)
   // first floor is selected 
-  .then(io3d.staging.furnish)
+  .then(io3d.staging.getFurnishings)
   // the furnish call outputs sceneStructure of the furnishing proposal
   .then(sceneStructure => { 
-    // do get these into A-Frame we can use 
+    // to get these into A-Frame we can use
     // the getAframeElementsFromSceneStructure method
     var elements = io3d.scene.getAframeElementsFromSceneStructure(sceneStructure)
     // add elements to the scene
@@ -61,3 +70,53 @@ io3d.scene.getStructure(sceneId)
 this will take the first space it finds
 and furnish it with Living and Dining
 output is the sceneStructure of the furnishing
+
+### Example using options
+
+```javascript
+const sceneEl = document.querySelector('a-scene')
+
+// get scene structure
+io3d.scene.getStructure(sceneId)
+  .then(sceneStructure => {
+    // find all spaces in the model
+    const spaces = getSpaces([sceneStructure])
+    // select a space directly
+    // or create a ui to allow the user to select
+    const spaceId = spaces[2].id
+    const label = 'bedroom'
+    return io3d.staging.getFurnishings(sceneStructure, {spaceId: id, label: label})
+  .then(sceneStructure => {
+    // to get these into A-Frame we can use
+    // the getAframeElementsFromSceneStructure method
+    var elements = io3d.scene.getAframeElementsFromSceneStructure(sceneStructure)
+    // add elements to the scene
+    elements.forEach(el => {
+      sceneEl.appendChild(el)
+    })
+  })
+  .catch(error => {
+    console.log(error)
+  })
+
+
+// recursively search through sceneStructure
+function getSpaces(sceneStructure) {
+  var spaces = []
+  sceneStructure.forEach(element3d => {
+    if (element3d.type === 'polyfloor') spaces.push(element3d)
+    if (element3d.children && element3d.children.length) {
+      spaces = spaces.concat(getSpaces(element3d.children))
+    }
+  })
+  return spaces
+}
+```
+
+### Further examples
+
+* [Load an Archilogic model and generate a UI to furnish each space](https://github.com/archilogic-com/3dio-js/blob/master/examples-browser/staging/stage-scene-structure/index.html)
+* [Drawing a room in Augmented Reality and furnishing it](https://github.com/archilogic-com/3dio-js/tree/master/examples-browser/staging/stage-room-ar)
+* [Recognize a labeled floor plan image and furnish one room](https://github.com/archilogic-com/3dio-js/blob/master/examples-browser/staging/stage-floor-plan/index.html)
+
+
