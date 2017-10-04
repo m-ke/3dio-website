@@ -31,7 +31,7 @@ To generate an API key or see your previously-generated key, visit [your organis
   <p>To use API methods that require an API key, please <a href="https://spaces.archilogic.com/dashboard">log in</a> with your Archilogic account or <a href="https://spaces.archilogic.com/dashboard">create a free account</a>.</p>
 </template>
 
-<script src="https://dist.3d.io/3dio-js/1.x.x-beta/3dio.min.js"></script>
+<script src="https://dist.3d.io/3dio-js/1.x.x/3dio.min.js"></script>
 <script>
 
 function makeApiKey() {

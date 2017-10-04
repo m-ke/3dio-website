@@ -21,7 +21,7 @@ This can be done with these components:
 ```html
 <head>
   <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-  <script src="https://dist.3d.io/3dio-js/1.x.x-beta/3dio.min.js"></script>
+  <script src="https://dist.3d.io/3dio-js/1.x.x/3dio.min.js"></script>
 </head>
 <body>
   <a-scene>
@@ -198,7 +198,7 @@ The following example shows a tour of the different rooms in an apartment:
 ```html
 <head>
   <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
-  <script src="https://dist.3d.io/3dio-js/1.x.x-beta/3dio.min.js"></script>
+  <script src="https://dist.3d.io/3dio-js/1.x.x/3dio.min.js"></script>
   <!-- This component requires the animation component from kframe! -->
   <script src="https://unpkg.com/aframe-animation-component/dist/aframe-animation-component.min.js"></script>
 </head>
