@@ -8,6 +8,7 @@ The following components are available:
 * [`io3d-furniture`](#io3d-furniture) to display furniture.
 * [`io3d-lighting`](#io3d-lighting) change the default light setup.
 * [`tour`](#tour) to create camera tours.
+* [`gblock`](#gblock) to display Google Blocks.
 
 ## What can be done with the components
 
@@ -285,5 +286,16 @@ If the transition should be immediate, you can set `move: 0` to make the movemen
     <a-entity tour-waypoint="front" position="0 2 5" rotation="-22.5 0 0"></a-entity>
     <a-entity tour-waypoint="back" position="0 2 -5" rotation="-22.5 180 0"></a-entity>
   </a-entity>
+</a-scene>
+```
+
+## gblock
+
+Loads Google Blocks glTFs models hosted on [https://vr.google.com/blocks](). The only parameter is the URL of a specific google blocks model.
+
+### Example
+```html
+<a-scene>
+  <a-entity gblock="https://vr.google.com/objects/duKsqcc0oUX"></a-entity>
 </a-scene>
 ```
