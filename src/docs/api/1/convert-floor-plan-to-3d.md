@@ -41,7 +41,7 @@ Use `io3d.floorPlan.getConversionStatus({ conversionId })` to get the status of 
 Possible values:
 * `'IN_PROGRESS'` no action needed 
 * `'REJECTED'` 
-conversion has unfortunately been reject. most likely due to one of the following reasons:
+conversion has unfortunately been rejected, most likely due to one of the following reasons:
 NO_FLOORPLAN, UNCLEAR_FLOORPLAN, MULTIPLE_LEVELS, INCLINED_CEILING`
 * `'COMPLETED'`
 
@@ -100,8 +100,8 @@ With `io3d.floorPlan.recognize()` you can convert a color coded pixel image into
 </table>
 
 The image has to have the correct metric dimensions.
-In this example we provide a square image within an A-Frame scene with a edge length of 15m.
-The image is extracted send to the API and the response arrives within a few seconds.
+In this example we provide a square image within an A-Frame scene with an edge length of 15m.
+The image is extracted then send to the API. The response arrives within a few seconds.
 
 ```html
 <a-scene>
