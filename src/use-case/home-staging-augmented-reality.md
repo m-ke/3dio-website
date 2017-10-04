@@ -18,7 +18,7 @@ This allows us to simply draw the room without any need for measurements.
 
 ## Furnishing proposals right in your room
 
-The measuring gives enough structural information to let our [Home Staging AI](https://3d.io/branch/upgrade-cta/docs/api/1/home-staging-ai.html) compute some furnishing proposals.
+The measuring gives enough structural information to let our [Home Staging AI](https://3d.io/docs/api/1/home-staging-ai.html) compute some furnishing proposals.
 
 * Within a few seconds a solution gets computed that fit the room structure and circulation
 * Generic furniture items can be replaced with real ones to get an idea how your room looks with different styles
