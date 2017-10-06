@@ -64,7 +64,9 @@
       a.src = g;
       m.parentNode.insertBefore(a, m)
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-    ga('create', 'UA-46441340-2', 'auto');
+    ga('create', 'UA-46441340-2', 'auto', {'allowLinker': true});
+    ga('require', 'linker');
+    ga('linker:autoLink', ['spaces.archilogic.com','docs.archilogic.com','furniture.3d.io','appcreator.3d.io','modify.3d.io']);
     ga('send', 'pageview');
     
   //- Hotjar Analytics script
