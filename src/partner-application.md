@@ -33,4 +33,4 @@
 
 ## Apply Now
 
-[Apply for Certified Partner Program](mailto:partner@archilogic.com)
+[Apply for Certified Partner Program](mailto:partner@archilogic.com?subject=Partner Program Application)

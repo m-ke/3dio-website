@@ -21,7 +21,7 @@ block content
         if partner.DESCRIPTION
           .description!=partner.DESCRIPTION
         .badges
-          a(href='mailto:'+partner.EMAIL target='_blank' onclick="ga('send', 'event', '3dio_partner_page', 'click_email','"+ partner.NAME +"');").badge.contact Email
+          a(href='mailto:'+partner.EMAIL+'?subject=3D.io Partner Contact' target='_blank' onclick="ga('send', 'event', '3dio_partner_page', 'click_email','"+ partner.NAME +"');").badge.contact Email
           if partner.URL
             div(onclick="ga('send', 'event', '3dio_partner_page', 'click_url','"+ partner.NAME +"');" style="display:inline")
               a(href=partner.URL target="_blank").badge.website Website
