@@ -9,8 +9,6 @@ Namespace: `io3d.modify`
 
 Applies a low poly, paper crafted style to the model.
 
-### Parameters
-
 | Parameter | Type | Required? | Description |
 | --- | --- | --- | --- |
 | `storageId` | String | Yes | The storageId of the model to modify. |
@@ -28,14 +26,9 @@ The resulting storageId of the transformed model gets logged upon task completio
     .then(console.log)
 ```
 
-(WIP)
-
 ## consolidateFaceSides
 
 Recalculates face sides for the model. This is useful if your model is not showing up properly
-
-
-### Parameters
 
 | Parameter | Type | Required? | Description |
 | --- | --- | --- | --- |
@@ -54,5 +47,3 @@ The resulting storageId of the transformed model gets logged upon task completio
     .then(function (status) { return io3d.utils.processing.whenDone(status)})
     .then(console.log)
 ```
-
-(WIP)

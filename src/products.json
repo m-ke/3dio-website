@@ -207,11 +207,11 @@
     "category": "content",
     "description": null,
     "app": {
-      "url": "modify.3d.io"
+      "url": "https://modify.3d.io"
     },
     "api": {
       "name": "modify",
-      "url": null,
+      "url": "https://3d.io/docs/api/1/modify.html",
       "methods": {
         "origami": { "requiresKey": true },
         "condolidateFaceSides": { "requiresKey": true }

@@ -7,14 +7,14 @@ Namespace: `io3d.storage`
 
 ## 3d and 2d formats overview
 
-| Format | dimension | specification | version |
-| ---    | ---       | --- | --- |
-| 3ds    | 3d        | | |
-| blend  | 3d        | Blender | 2.78 +|
-| dae    | 3d        | | |
-| dxf    | 3d/2d     | | |
-| fbx    | 3d        | | |
-| obj    | 3d        | Wavefront| |
+| Format   | dimension | specification | version |
+| ---      | ---       | --- | --- |
+| `3ds`    | 3d        | | |
+| `blend`  | 3d        | Blender | 2.78 +|
+| `dae`    | 3d        | | |
+| `dxf`    | 3d/2d     | | |
+| `fbx`    | 3d        | | |
+| `obj`    | 3d        | Wavefront| |
 
 ### Texture export
 
@@ -23,45 +23,23 @@ For example, if a source texture is available it will always export the source o
 
 Supported texture maps per file format:
 
-| Format | diffuse map | specular map | normal map | light map |
-| ---    | ---         | ---          | ---        | ---       |
-| 3ds    | no          | no           | no         | no        |
-| blend  | yes         | yes          | yes        | yes       |
-| dae    | no          | no           | no         | no        |
-| dxf    | no          | no           | no         | no        |
-| fbx    | yes         | yes          | yes        | yes       |
-| obj    | yes         | yes          | map_Bump channel | no        |
-
-
-### Recommendations for external use
-
-Recommended format for use in other software and toolkits:
-
-| Software      | Format |
-| ---           | ---    |
-| 3D Studio Max | 3ds, dxf |
-| ArchiCAD      | dxf |
-| ARKit         | dae |
-| AutoCAD       | dxf |
-| Blender       | blend |
-| Cinema 4D     | fbx, obj |
-| pCon Planner  | 3ds, dxf |
-| Maya          | fbx |
-| Revit         | dxf (2d) |
-| Rhino         | obj |
-| SketchUp      | obj |
-| Unity Game Engine  | blend |
-| Unreal Game Engine | fbx |
+| Format   | diffuse map | specular map | normal map | light map |
+| ---      | ---         | ---          | ---        | ---       |
+| `3ds`    | no          | no           | no         | no        |
+| `blend`  | yes         | yes          | yes        | yes       |
+| `dae`    | no          | no           | no         | no        |
+| `dxf`    | no          | no           | no         | no        |
+| `fbx`    | yes         | yes          | yes        | yes       |
+| `obj`    | yes         | yes          | map_Bump channel | no        |
 
 
 ## export3ds,  exportBlend, exportDae, exportFbx, exportObj
 
-### Parameters
-
 | Parameter | Type | Required? | Description |
 | --- | --- | --- | --- |
-| `storageId` | String | No | The storageId of the model to export. |
-| `filename`  | String | Yes | The requested filename for the exported model (no file suffix). |
+| `storageId` | String | Yes | The storageId of the model to export. |
+| `options` | Object | No | |
+| `options.filename`  | String | No | The requested filename for the exported model (no file suffix). |
 
 ### Example
 
@@ -77,13 +55,12 @@ The resulting storageId of the converted zip archive gets logged upon task compl
 
 ## exportDxf
 
-### Parameters
-
 | Parameter | Type | Required? | Description |
 | --- | --- | --- | --- |
-| `storageId` | String | No  | The storageId of the model to export. |
-| `filename`  | String | Yes | The requested filename for the exported model (no file suffix). |
-| `projection`| String | Yes | The camera position for the 2D projection (rear, front, top, left, right, no), 'no' will export a 3D dxf. |
+| `storageId` | String | Yes  | The storageId of the model to export. |
+| `options` | Object | No | |
+| `options.filename`  | String | No | The requested filename for the exported model (no file suffix). |
+| `options.projection`| String | No | The camera position for the 2D projection (rear, front, top, left, right, no), 'no' will export a 3D dxf. |
 
 ### Example
 
@@ -96,3 +73,24 @@ The resulting storageId of the projected 2d floorplan gets logged upon task comp
     .then(function (status) { return io3d.utils.processing.whenDone(status)})
     .then(console.log)
 ```
+
+## Software specific format recommendation
+
+Recommended 3d/2d file format for use in other software and toolkits:
+
+| Name          | Format |
+| ---           | ---    |
+| 3D Studio Max | `3ds`, `dxf` |
+| ArchiCAD      | `dxf` |
+| ARKit         | `dae` |
+| AutoCAD       | `dxf` |
+| Blender       | `blend` |
+| Cinema 4D     | `fbx`, `obj` |
+| Illustrator   | `dxf` (2d) |
+| Maya          | `fbx` |
+| pCon Planner  | `3ds`, `dxf` |
+| Revit         | `dxf` (2d) |
+| Rhino         | `obj` |
+| SketchUp      | `obj` |
+| Unity Game Engine  | `blend` |
+| Unreal Game Engine | `fbx` |

@@ -1,4 +1,9 @@
 # Lightmap baking
 
-Coming soon …
 
+
+Namespace: `io3d.light`
+
+### bakeLoRes
+
+### bakeHiRes
