@@ -16,12 +16,12 @@ Questions? [Ask us on Stack Overflow.](https://stackoverflow.com/questions/tagge
 * [Scene](scene.md)
 * [Home staging AI](home-staging-ai.md)
 * [Convert floor plan to 3D](convert-floor-plan-to-3d.md)
-* Import 3D model 
-* Export 3D model
+* Import 3D model
 * Import matterport (3D scan)
+* [Export 3D model](model-export.md)
 * Materials
-* Lightmap baking
-* Modify 3D model
+* [Lightmap baking](lightmap-baking.md)
+* [Modify 3D model](modify.md)
 
 ## Utils
 * [UI](ui.md)

@@ -97,14 +97,16 @@
     },
     "api": {
       "name": "export",
-      "url": null,
+      "url": "https://3d.io/docs/api/1/model-export.html",
       "methods": {
-        "obj": { "requiresKey": true },
+        "3ds": { "requiresKey": true },
+        "blend": { "requiresKey": true },
+        "dae": { "requiresKey": true },
+        "dxf": { "requiresKey": true },
+        "fbx": { "requiresKey": true },
         "gltf": { "requiresKey": true },
         "ifc": { "requiresKey": true },
-        "3ds": { "requiresKey": true },
-        "fbx": { "requiresKey": true },
-        "dae": { "requiresKey": true }
+        "obj": { "requiresKey": true }
       }
     }
   },{
@@ -192,11 +194,11 @@
       "url": "https://docs.archilogic.com/en/3d-editor/lighting/"
     },
     "api": {
-      "name": "baking",
-      "url": null,
+      "name": "bake",
+      "url": "https://3d.io/docs/api/1/lightmap-baking.html",
       "methods": {
-        "calculateLoRes": { "requiresKey": true },
-        "calculateHiRes": { "requiresKey": true }
+        "bakeLoRes": { "requiresKey": true },
+        "bakeHiRes": { "requiresKey": true }
       }
     }
   },{
@@ -205,14 +207,14 @@
     "category": "content",
     "description": null,
     "app": {
-      "url": null
+      "url": "modify.3d.io"
     },
     "api": {
       "name": "modify",
       "url": null,
       "methods": {
         "origami": { "requiresKey": true },
-        "reduce": { "requiresKey": true }
+        "condolidateFaceSides": { "requiresKey": true }
       }
     }
   }]
