@@ -28,7 +28,7 @@ The resulting storageId of the transformed model gets logged upon task completio
 
 ## consolidateFaceSides
 
-Recalculates face sides for the model. This is useful if your model is not showing up properly
+Recalculates face sides for the model. This is useful if your model is not showing up properly or has visible holes.
 
 | Parameter | Type | Required? | Description |
 | --- | --- | --- | --- |

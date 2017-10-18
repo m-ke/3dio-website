@@ -48,7 +48,7 @@ The resulting storageId of the converted zip archive gets logged upon task compl
 
 ```javascript
   io3d.storage.exportBlend("/535e624259ee6b0200000484/bake/2017-03-03_10-15-49_M7nYrh/regular/lighting.gz.data3d.buffer",
-                            {outputFileName: 'material-test'})
+                            {filename: 'material-test'})
     .then(function (status) { return io3d.utils.processing.whenDone(status)})
     .then(console.log)
 ```
@@ -69,7 +69,7 @@ The resulting storageId of the projected 2d floorplan gets logged upon task comp
 
 ```javascript
   io3d.storage.exportDxf("535e624259ee6b0200000484/processing/2017-10-17_07-26-42_eqgq9n/lighting.gz.data3d.buffer",
-                            {outputFileName: 'my-floorplan', projection: 'top'})
+                            {filename: 'my-floorplan', projection: 'top'})
     .then(function (status) { return io3d.utils.processing.whenDone(status)})
     .then(console.log)
 ```
