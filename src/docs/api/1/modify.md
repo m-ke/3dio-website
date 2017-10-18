@@ -1,6 +1,6 @@
 # Modify
 
-Modify API calls give you access to a broad enables you to transform and style your 3D content using scalable preprocessing in the cloud.
+Modify API enables you to transform and style your 3D content using scalable preprocessing in the cloud.
 Play around with the [modify app](https://modify.3d.io) to test out different settings.
 
 Namespace: `io3d.modify`
@@ -28,7 +28,7 @@ The resulting storageId of the transformed model gets logged upon task completio
 
 ## consolidateFaceSides
 
-Recalculates face sides for the model. This is useful if your model is not showing up properly or has visible holes.
+This API fixes inconsistencies in supposedly continuous surfaces. This is useful if your model is not showing up properly or has visible holes.
 
 | Parameter | Type | Required? | Description |
 | --- | --- | --- | --- |
