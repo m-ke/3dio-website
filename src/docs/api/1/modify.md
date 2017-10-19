@@ -26,6 +26,9 @@ The resulting storageId of the transformed model gets logged upon task completio
     .then(console.log)
 ```
 
+![origami Modifier](https://storage.3d.io/535e624259ee6b0200000484/2017-10-19_9-44_i7TkMp/modify.png)
+
+
 ## consolidateFaceSides
 
 This API fixes inconsistencies in supposedly continuous surfaces. This is useful if your model is not showing up properly or has visible holes.
@@ -47,3 +50,5 @@ The resulting storageId of the transformed model gets logged upon task completio
     .then(function (status) { return io3d.utils.processing.whenDone(status)})
     .then(console.log)
 ```
+
+![consolidateFaceSides Modifier](https://storage.3d.io/535e624259ee6b0200000484/2017-10-18_23-4_1Dg9G4/consolidate.png)
