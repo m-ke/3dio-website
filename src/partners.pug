@@ -21,7 +21,7 @@ block content
       var partners = getAllPartnerInfo()
       var partnerRows = []
       for (var i=0, l=partners.length; i<l; i+=3) {
-        partnerRows.push([ partners[i], partners[i+1], partners[i+2] ])
+        partnerRows.push([ partners[i+2], partners[i+1], partners[i] ])
       }
 
     //- Mixin (html template for partner list)
