@@ -26,8 +26,10 @@ The following snippet sends a modify API request with storageID from a furniture
 The resulting storageId of the transformed model gets logged upon task completion:
 
 ```javascript
-  io3d.modify.origami('/535e624259ee6b0200000484/170511-1605-ti05qg/archilogic_2017-05-11_16-05-27_vNIa8r.gz.data3d.buffer')
-    .then(function (status) { return io3d.utils.processing.whenDone(status)})
+  var storageId = '/535e624259ee6b0200000484/170511-1605-ti05qg/archilogic_2017-05-11_16-05-27_vNIa8r.gz.data3d.buffer'
+
+  io3d.modify.origami(storageId)
+    .then(io3d.utils.processing.whenDone)
     .then(console.log)
 ```
 
