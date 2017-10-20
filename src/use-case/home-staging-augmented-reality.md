@@ -5,6 +5,15 @@ Thanks to ARKit (native iOS implementation by Apple) and ARCore ( Google Android
 
 We couldn't wait to try it out and build a small demo that allows the user to draw a floor plan while standing in the room and furnish it without the need to push or carry anything.
 
+## Furnishing proposals right in your room
+
+Once a room has been measured by marking corners, windows and doors (see below), we have enough structural information at hand to let our [Home Staging AI](https://3d.io/docs/api/1/home-staging-ai.html) compute some furnishing proposals.
+
+* Within a few seconds a solution gets computed that fit the room structure and circulation
+* Generic furniture items can be replaced with real ones to get an idea how your room looks with different styles
+
+![staging](https://storage.3d.io/535e624259ee6b0200000484/2017-09-13_11-42-23_XUM61N/home-staging-ai.gif)
+
 ## Measuring a room with a few clicks
 
 The augmented reality kit on the device detects the floor plane and sets the correct scale.
@@ -15,15 +24,6 @@ This allows us to simply draw the room without any need for measurements.
 * Mark windows and doors by setting their start and end point on the wall
 
 ![draw-plan](https://storage.3d.io/535e624259ee6b0200000484/2017-09-13_11-56-39_wW7wLF/draw-plan.gif)
-
-## Furnishing proposals right in your room
-
-The measuring gives enough structural information to let our [Home Staging AI](https://3d.io/docs/api/1/home-staging-ai.html) compute some furnishing proposals.
-
-* Within a few seconds a solution gets computed that fit the room structure and circulation
-* Generic furniture items can be replaced with real ones to get an idea how your room looks with different styles
-
-![staging](https://storage.3d.io/535e624259ee6b0200000484/2017-09-13_11-42-23_XUM61N/home-staging-ai.gif)
 
 ## Developer preview
 
