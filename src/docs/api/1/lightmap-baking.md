@@ -23,9 +23,11 @@ and how to authenticate in order to use this API.
 ### Example
 
 ```javascript
-  io3d.light.bakeLoRes("/535e624259ee6b0200000484/bake/2017-03-03_10-15-49_M7nYrh/regular/lighting.gz.data3d.buffer",
-                            { sunDirection: [ 0.75, -0.75, -0.4 ]})
+  var storageId = '535e624259ee6b0200000484/bake/2017-10-20_15-22-15_lKCBcz/lighting.gz.data3d.buffer'
+
+  io3d.light.bakeLoRes(storageId, { sunDirection: [ -0.73, -0.3, 0.6 ] })
     .then(io3d.utils.processing.whenDone)
+    .then(io3d.storage.getUrlFromStorageId)
     .then(console.log)
 ```
 
@@ -51,15 +53,20 @@ Samples
 
 ### Example
 
+The following snippet sends a bake API request with storageID from a scene. The resulting storageId url of the transformed model gets logged upon task completion:
+
 ```javascript
-  io3d.light.bakeHiRes("/535e624259ee6b0200000484/bake/2017-03-03_10-15-49_M7nYrh/regular/lighting.gz.data3d.buffer",
-                            { sunDirection: [ 0.75, -0.75, -0.4 ],
-                              lightMapCount: 1,
-                              samples: 1000 })
+  var storageId = '535e624259ee6b0200000484/bake/2017-10-20_15-22-15_lKCBcz/lighting.gz.data3d.buffer'
+  
+  io3d.light.bakeHiRes(storageId,
+                       { sunDirection: [ -0.73, -0.3, 0.6 ],
+                         lightMapCount: 1,
+                         samples: 1000 })
     .then(io3d.utils.processing.whenDone)
+    .then(io3d.storage.getUrlFromStorageId)
     .then(console.log)
 ```
 
-## Bake a a-frame scene
+## Example: Bake an aFrame scene
 
-(WIP) How to get buffer file from (a-frame) scene
+[Coming soon] How to get a storageId from an aFrame scene and bake it with custom sun direction.
