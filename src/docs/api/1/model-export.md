@@ -28,7 +28,7 @@ For example, if a source texture is available it will always export the source o
 
 Supported texture maps per file format:
 
-| Format   | diffuse map | specular map | normal map | light map |
+| Format   | Diffuse Map | Specular Map | Normal Map | Light Map |
 | ---      | ---         | ---          | ---        | ---       |
 | `3ds`    | no          | no           | no         | no        |
 | `blend`  | yes         | yes          | yes        | yes       |
