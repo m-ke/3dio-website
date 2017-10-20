@@ -25,7 +25,7 @@ and how to authenticate in order to use this API.
 ```javascript
   io3d.light.bakeLoRes("/535e624259ee6b0200000484/bake/2017-03-03_10-15-49_M7nYrh/regular/lighting.gz.data3d.buffer",
                             { sunDirection: [ 0.75, -0.75, -0.4 ]})
-    .then(function (status) { return io3d.utils.processing.whenDone(status)})
+    .then(io3d.utils.processing.whenDone)
     .then(console.log)
 ```
 
@@ -56,7 +56,7 @@ Samples
                             { sunDirection: [ 0.75, -0.75, -0.4 ],
                               lightMapCount: 1,
                               samples: 1000 })
-    .then(function (status) { return io3d.utils.processing.whenDone(status)})
+    .then(io3d.utils.processing.whenDone)
     .then(console.log)
 ```
 
