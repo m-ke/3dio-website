@@ -12,14 +12,14 @@ and how to authenticate in order to use this API.
 
 ## 3d and 2d formats overview
 
-| Format   | dimension | specification | version |
-| ---      | ---       | --- | --- |
-| `3ds`    | 3d        | | |
-| `blend`  | 3d        | Blender | 2.78 +|
-| `dae`    | 3d        | | |
-| `dxf`    | 3d/2d     | | |
-| `fbx`    | 3d        | | |
-| `obj`    | 3d        | Wavefront| |
+| Format   | Method | Dimension | Specifications | Version |
+| ---      | ---     | ---       | --- | --- |
+| `3ds`    | export3ds | 3d      | [3DS Spec](http://www.martinreddy.net/gfx/3d/3DS.spec)| |
+| `blend`  | exportBlend | 3d    | [Blender](https://www.blender.org/) | 2.78 +|
+| `dae`    | exportDae | 3d      | [Collada](https://www.khronos.org/files/collada_spec_1_4.pdf) | |
+| `dxf`    | exportDxf | 3d/2d   | [AutoCAD](http://usa.autodesk.com/adsk/servlet/item?id=24240325&siteID=123112) | AC1009 |
+| `fbx`    | exportFbx | 3d      | [Autodesk FBX](https://wiki.blender.org/index.php/Extensions:2.6/Py/Scripts/Import-Export/Autodesk_FBX)| Bin 7.4|
+| `obj`    | exportObj | 3d      | [Wavefront OBJ](http://www.fileformat.info/format/wavefrontobj/egff.htm)| |
 
 ### Texture export
 
@@ -49,12 +49,14 @@ Supported texture maps per file format:
 ### Example
 
 The following snippet sends a export API request with storageID of a model for conversion to the blend format.
-The resulting storageId of the converted zip archive gets logged upon task completion and is ready for download:
+The resulting url of the converted zip archive gets logged upon task completion and is ready for download:
 
 ```javascript
-  io3d.storage.exportBlend("/535e624259ee6b0200000484/bake/2017-03-03_10-15-49_M7nYrh/regular/lighting.gz.data3d.buffer",
-                            {filename: 'material-test'})
-    .then(function (status) { return io3d.utils.processing.whenDone(status)})
+  val storageId = '/535e624259ee6b0200000484/bake/2017-03-03_10-15-49_M7nYrh/regular/lighting.gz.data3d.buffer'
+  
+  io3d.storage.exportBlend( storageId, { filename: 'material-test' })
+    .then(io3d.utils.processing.whenDone)
+    .then(io3d.storage.getUrlFromStorageId)
     .then(console.log)
 ```
 
@@ -70,12 +72,14 @@ The resulting storageId of the converted zip archive gets logged upon task compl
 ### Example
 
 The following snippet sends a export API request with storageID to create a top down dxf projection.
-The resulting storageId of the projected 2d floorplan gets logged upon task completion and is ready for download:
+The resulting url of the projected 2d floorplan gets logged upon task completion and is ready for download:
 
 ```javascript
-  io3d.storage.exportDxf("535e624259ee6b0200000484/processing/2017-10-17_07-26-42_eqgq9n/lighting.gz.data3d.buffer",
-                            {filename: 'my-floorplan', projection: 'top'})
-    .then(function (status) { return io3d.utils.processing.whenDone(status)})
+  val storageId = '535e624259ee6b0200000484/processing/2017-10-17_07-26-42_eqgq9n/lighting.gz.data3d.buffer'
+  
+  io3d.storage.exportDxf(storageId, { filename: 'my-floorplan', projection: 'top' })
+    .then(io3d.utils.processing.whenDone)
+    .then(io3d.storage.getUrlFromStorageId)
     .then(console.log)
 ```
 
