@@ -14,7 +14,7 @@ and how to authenticate in order to use this API.
 
 | Format   | Method | Dimension | Specifications | Version |
 | ---      | ---     | ---       | --- | --- |
-| `3ds`    | export3ds | 3d      | [3DS Spec](http://www.martinreddy.net/gfx/3d/3DS.spec)| |
+| `3ds`    | export3ds | 3d      | [Autodesk 3DS](http://www.martinreddy.net/gfx/3d/3DS.spec)| |
 | `blend`  | exportBlend | 3d    | [Blender](https://www.blender.org/) | 2.78 +|
 | `dae`    | exportDae | 3d      | [Collada](https://www.khronos.org/files/collada_spec_1_4.pdf) | |
 | `dxf`    | exportDxf | 3d/2d   | [AutoCAD](http://usa.autodesk.com/adsk/servlet/item?id=24240325&siteID=123112) | AC1009 |
