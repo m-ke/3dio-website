@@ -14,8 +14,7 @@ and how to authenticate in order to use this API.
 
 ## bake, bakeLoRes
 
-Bake a preview
-
+Bake a preview of your scene. Use this API to get a quick preview of your lighting setup. This is useful if you need a quick result for your prototype. Bake your model in hi-res if you finished your design. 
 
 | Parameter | Type | Required? | Default | Description |
 | --- | --- | --- | --- | --- |
@@ -40,6 +39,8 @@ The following snippet sends a bake API request with storageID from a scene. The 
 ```
 
 ## bakeHiRes
+
+Bake your scene in high quality. This is useful to make your model more realistic and beautiful before publishing.
 
 | Parameter | Type | Required? | Default | Description |
 | --- | --- | --- | --- | --- |
