@@ -5,6 +5,11 @@ Supported texture types depend on the export file format specification.
 
 Namespace: `io3d.storage`
 
+## Quota
+
+The export API is a part of the 3d.io Freemium API. Learn here about [Quotas](https://3d.io/docs/api/1/authentication.html)
+and how to authenticate in order to use this API.
+
 ## 3d and 2d formats overview
 
 | Format   | dimension | specification | version |

@@ -1,19 +1,24 @@
 # Light map baking
 
 Light maps are image textures that enrich the appearance of the model with shadow and light information. Light maps are independent of the other textures in the material.
-Baking provides realistic lighting effects at a low computational cost. They enrich your models without impacting the performance on all supported devices.
+Baking provides realistic lighting effects at a low computational cost and enriches your models without impacting the performance on all supported devices.
 
 The light simulation can be set up based on the location of the model, its orientation and a specified time and day of the year.
 
 Namespace: `io3d.light`
 
+## Quota
+
+The bake API is a part of the 3d.io Freemium API. Learn here about [Quotas](https://3d.io/docs/api/1/authentication.html)
+and how to authenticate in order to use this API.
+
 ## bake, bakeLoRes
 
-| Parameter | Type | Required? | Description |
-| --- | --- | --- | --- |
-| `storageId` | String | Yes | The storageId of the model to export. |
-| `options` | Object | No | |
-| `options.sunDirection`  | Array(float) | No | [ 0.75, -0.48, -0.46 ] | What direction the sun is coming from. |
+| Parameter | Type | Required? | Default | Description |
+| --- | --- | --- | --- | --- |
+| `storageId` | String | Yes | | The storageId of the model to be baked. |
+| `options` | Object | No | | |
+| `options.sunDirection`  | Array(Float) | No | [ 0.75, -0.48, -0.46 ] | What direction the sun is coming from. |
 
 ### Example
 

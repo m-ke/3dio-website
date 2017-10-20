@@ -5,6 +5,11 @@ Play around with the [modify app](https://modify.3d.io) to test out different se
 
 Namespace: `io3d.modify`
 
+## Quota
+
+The modify API is a part of the 3d.io Freemium API. Learn here about [Quotas](https://3d.io/docs/api/1/authentication.html)
+and how to authenticate in order to use this API.
+
 ## origami
 
 Applies a low poly, paper crafted style to the model.
