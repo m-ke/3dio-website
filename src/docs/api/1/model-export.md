@@ -95,7 +95,7 @@ Recommended 3d/2d file format for use in other software and toolkits:
 | AutoCAD       | `dxf` |
 | Blender       | `blend` |
 | Cinema 4D     | `fbx`, `obj` |
-| Illustrator   | `dxf` (2d) |
+| Illustrator (Adobe) | `dxf` (2d) |
 | Maya          | `fbx` |
 | pCon Planner  | `3ds`, `dxf` |
 | Revit         | `dxf` (2d) |
