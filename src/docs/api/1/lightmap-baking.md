@@ -14,13 +14,21 @@ and how to authenticate in order to use this API.
 
 ## bake, bakeLoRes
 
+Bake a preview
+
+
 | Parameter | Type | Required? | Default | Description |
 | --- | --- | --- | --- | --- |
 | `storageId` | String | Yes | | The storageId of the model to be baked. |
 | `options` | Object | No | | |
 | `options.sunDirection`  | Array(Float) | No | [ 0.75, -0.48, -0.46 ] | What direction the sun is coming from. |
 
+**Sun Direction**
+[coming soon] Determine the position of the sun.
+
 ### Example
+
+The following snippet sends a bake API request with storageID from a scene. The resulting url of the transformed model gets logged upon task completion:
 
 ```javascript
   var storageId = '535e624259ee6b0200000484/bake/2017-10-20_15-22-15_lKCBcz/lighting.gz.data3d.buffer'
@@ -41,19 +49,18 @@ and how to authenticate in order to use this API.
 | `options.lightMapCount`  | Number | No | optiomal count calculated | How many light maps should be baked. |
 | `options.samples`  | Number | No | 1000 | How many raytracing samples are used. |
 
-Sun Direction
-- (WIP)
+**Sun Direction**
+[coming soon] Determine the position of the sun.
 
-Light Map Count
-- performance
+**Light Map Count**
+The map count influences the overall resolution for the light simulation. We advise you to use an optimal count depending on the level of detail and size of your model. If not provided, the server will calculate an optimum count for your scene. If your light map count is to low, your baked light might look a bit noisy. If too high, the performance of your scene might be affected.
 
-Samples
-- less samples, faster bake
-- more samples, better lightmaps
+**Samples**
+With samples you can specify how many [raytracing rays](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) will be used by the render engine to do the simulation. With less samples your result will be available faster, but your light map image could be a bit noisy. The recommended range of samples for a good result is between 800-1200, if you have a lot of additional light sources, increase the value to 1500.
 
 ### Example
 
-The following snippet sends a bake API request with storageID from a scene. The resulting storageId url of the transformed model gets logged upon task completion:
+The following snippet sends a bake API request with storageID from a scene. The resulting url of the transformed model gets logged upon task completion:
 
 ```javascript
   var storageId = '535e624259ee6b0200000484/bake/2017-10-20_15-22-15_lKCBcz/lighting.gz.data3d.buffer'
