@@ -52,7 +52,7 @@ The following snippet sends a export API request with storageID of a model for c
 The resulting url of the converted zip archive gets logged upon task completion and is ready for download:
 
 ```javascript
-  val storageId = '/535e624259ee6b0200000484/bake/2017-03-03_10-15-49_M7nYrh/regular/lighting.gz.data3d.buffer'
+  var storageId = '/535e624259ee6b0200000484/bake/2017-03-03_10-15-49_M7nYrh/regular/lighting.gz.data3d.buffer'
   
   io3d.storage.exportBlend( storageId, { filename: 'material-test' })
     .then(io3d.utils.processing.whenDone)
@@ -75,7 +75,7 @@ The following snippet sends a export API request with storageID to create a top 
 The resulting url of the projected 2d floorplan gets logged upon task completion and is ready for download:
 
 ```javascript
-  val storageId = '535e624259ee6b0200000484/processing/2017-10-17_07-26-42_eqgq9n/lighting.gz.data3d.buffer'
+  var storageId = '535e624259ee6b0200000484/processing/2017-10-17_07-26-42_eqgq9n/lighting.gz.data3d.buffer'
   
   io3d.storage.exportDxf(storageId, { filename: 'my-floorplan', projection: 'top' })
     .then(io3d.utils.processing.whenDone)
