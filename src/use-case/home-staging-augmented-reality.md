@@ -27,7 +27,8 @@ The measuring gives enough structural information to let our [Home Staging AI](h
 
 ## Developer preview
 
-The demo is available on github as a [developer preview](https://github.com/archilogic-com/3dio-js/tree/master/examples-browser/staging/stage-room-ar).
+The demo can be tried out live on [glitch.me](https://homestaging-ar.glitch.me/) 
+It is also available on [github](https://github.com/archilogic-com/3dio-js/tree/master/examples-browser/staging/stage-room-ar).
 To run it you need an ARKit or ARCore device with a compatible browser.
 
 [Getting started with AR on the Web](https://developers.google.com/ar/develop/web/getting-started)
