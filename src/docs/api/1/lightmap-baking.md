@@ -51,12 +51,15 @@ Bake your scene in high quality. This is useful to make your model more realisti
 | `options.samples`  | Number | No | 1000 | How many raytracing samples are used. |
 
 **Sun Direction**
+
 [coming soon] Determine the position of the sun.
 
 **Light Map Count**
+
 The map count influences the overall resolution for the light simulation. We advise you to use an optimal count depending on the level of detail and size of your model. If not provided, the server will calculate an optimum count for your scene. If your light map count is to low, your baked light might look a bit noisy. If too high, the performance of your scene might be affected.
 
 **Samples**
+
 With samples you can specify how many [raytracing rays](https://en.wikipedia.org/wiki/Ray_tracing_(graphics)) will be used by the render engine to do the simulation. With less samples your result will be available faster, but your light map image could be a bit noisy. The recommended range of samples for a good result is between 800-1200, if you have a lot of additional light sources, increase the value to 1500.
 
 ### Example
