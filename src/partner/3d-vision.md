@@ -4,8 +4,8 @@ NAME: 3D Vision
 TAGLINE: Turn your floor plans into 3D virtual tours 
 DESCRIPTION: Looking to create high quality 3D immersive experiences to generate leads for realtors, developers and architects. 
 LOGO: https://storage.3d.io/535e624259ee6b0200000484/2017-10-25_08-54-13_Tgwvf3/3dvisionLogo.jpg 
-LOGO_SIZE: 90 #percent 
-LOGO_BG_COLOR: '#ddd' 
+LOGO_SIZE: 70 #percent 
+LOGO_BG_COLOR: '#231f20'
 IMAGE: 
 URL: www.3dvision.xyz
 EMAIL: daniel@3dvision.xyz 
