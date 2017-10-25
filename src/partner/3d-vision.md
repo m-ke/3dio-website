@@ -18,7 +18,7 @@ SAMPLES:
       IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-10-25_09-03-50_VBehTh/Example1.jpg
       URL: https://goo.gl/jMvZY0
       PRICE: 250
-      - TITLE: Initial Concept For a House 
+    - TITLE: Initial Concept For a House 
       DESCRIPTION: Project to visualize the initial concept for a house in Mexico within 24 hours. 
       IMAGE: https://storage.3d.io/535e624259ee6b0200000484/2017-10-25_09-07-39_delijj/Example2.jpg
       URL: https://goo.gl/ehqVpY
