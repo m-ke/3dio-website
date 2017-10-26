@@ -10,9 +10,9 @@ In case you find something that is a bug, read on :-)
 
 Please provide the following information:
 * **How to Reproduce**<br>
-  Describe in a few steps the actions to make the bug appear. Plaese provide a URL so that know where to start from. This information is crutial for us in order to reproduce the bug and localize it.
+  Describe in a few steps the actions to make the bug appear. Please provide a URL or a code snippet if available so that we know where to start from. This information is crucial for us in order to reproduce the bug and localize it.
 * **Actual Result**<br>
-  Describe the bug in a few words. This will help us to understand whether we need to 
+  Describe the bug in a few words. You can also attach a screenshot / screenshot of the errors in your browser console if these are relevant.  
 * **Expected Result**<br>
   Describe what you would expect to happen.
 
@@ -26,7 +26,7 @@ For minor changes, please craft and submit a pull request with the necessary cha
 
 ### Major change (e.g. structure, features)
 
-For major changes we'd love to discuss the proposed changes as a Github issue in this repository, so we can better coordinate our efforts, avoid duplication of work and help you contribute to the project successfully and smoothly.
+For major changes we'd love to discuss the proposed changes as a Github issue in this repository, so we can better coordinate our efforts, avoid duplication of work, and help you contribute to the project successfully and smoothly.
 
 ## Documentation
 
@@ -44,7 +44,7 @@ For major changes we'd love to discuss the proposed changes as a Github issue in
 ### Examples
 * Every example should be executable without modification
   * Do not use fake ids (i.e. "12345")
-  * Avoid template like placeholders (i.e. "/<your-folder>/index.html")
+  * Avoid template-like placeholders (i.e. "/<your-folder>/index.html")
 * Isomorphic code should be presented in generic examples.
-* Examples for specific environments should be declared as such explicitely.
-* Distinguish secret from public keys and always explicitely declare them as such.
+* Examples for specific environments should be declared as such explicitly.
+* Distinguish secret from publishable keys and always explicitly declare them as such.
