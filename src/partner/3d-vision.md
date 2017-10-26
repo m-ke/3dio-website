@@ -7,7 +7,7 @@ LOGO: https://storage.3d.io/535e624259ee6b0200000484/2017-10-25_08-54-13_Tgwvf3/
 LOGO_SIZE: 70 #percent 
 LOGO_BG_COLOR: '#000000'
 IMAGE: 
-URL: www.3dvision.xyz
+URL: https://3dvision.xyz/
 EMAIL: daniel@3dvision.xyz 
 COUNTRY: New Zealand 
 CITY: Auckland 
