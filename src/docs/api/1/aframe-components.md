@@ -6,7 +6,7 @@ The following components are available:
 
 * [`io3d-data3d`](#io3d-data3d) to display 3D models.
 * [`io3d-furniture`](#io3d-furniture) to display furniture.
-* [`io3d-lighting`](#io3d-lighting) change the default light setup.
+* [`io3d-lighting`](#io3d-lighting) to change the default light setup.
 * [`tour`](#tour) to create camera tours.
 * [`gblock`](#gblock) to display Google Blocks.
 
@@ -49,7 +49,7 @@ This can be done with these components:
 
 Lighting can be configured using two properties: `lightMapIntensity` and `lightMapExposure`.
 
-Both influence how the [precalculated lights](https://spaces.archilogic.com/blog/3d-models-light-baking) are affecting the loaded scene.
+Both influence how the [precalculated lights](https://spaces.archilogic.com/blog/3d-models-light-baking) affect the loaded scene.
 The exposure can be used to over- or underexpose the scene while the intensity allows to adjust how much the light blends with the materials.
 
 The relation of the two settings is visualised below:
@@ -57,7 +57,7 @@ The relation of the two settings is visualised below:
 
 ## io3d-furniture
 
-The `io3d-furniture` component allows to display a piece of furniture in A-Frame.
+The `io3d-furniture` component displays a piece of furniture in A-Frame.
 You specify the desired piece of furniture by furniture ID.
 
 ```html
@@ -70,11 +70,11 @@ You specify the desired piece of furniture by furniture ID.
 | --- | --- |
 | `id` | The furniture ID of the desired furniture piece from the [furniture library](https://furniture.3d.io) |
 
-### Selecting the furniture material
+### Selecting furniture materials
 
 Furniture may have more than one material available. In this case you may select the desired material.
 
-**Note**: Materials are associated with parts of the (or the whole) furniture.
+**Note**: Materials are associated with parts of the (or the whole) furniture object.
 
 There are three ways of changing and accessing materials:
 
@@ -94,7 +94,7 @@ There are three ways of changing and accessing materials:
 
 You can specify the material for each furniture part in the HTML attributes.
 
-For example, the shelf below has one furniture part called `Wood`, so we use the `material_Wood` property to select the `Black Walnut Tree` material:
+For example, the shelf below has one furniture part called `Wood` so we use the `material_Wood` property to select the `Black Walnut Tree` material:
 
 ```html
   <a-entity io3d-furniture="id:10344b13-d981-47a0-90ac-f048ee2780a6; material_Wood:Black Walnut Tree" position="0 0 -3.2"></a-entity>
@@ -123,7 +123,7 @@ var component = shelf.components['io3d-furniture']
 console.log(component.data.availableMaterials)
 ```
 
-If the furniture has multiple materials available, this will log an object with the different parts of the furniture as properties. Each property contains an array of names for the different materials.
+If the furniture has multiple materials available, this will log an object with the different parts of the furniture as properties. Each property contains an array of names of the different materials.
 
 For example, the shelf may have a single piece (`Wood`) with a set of available materials:
 
@@ -158,7 +158,7 @@ The material properties follow the naming scheme "material_" followed by the fur
 
 ## io3d-lighting
 
-Using `io3d-lighting` component replaces the default A-Frame lighting scene and adds new preset
+Using `io3d-lighting` component replaces the default A-Frame lighting scene and adds a new preset.
 
 | Parameter | Description | Default value |
 | --- | --- | --- |
@@ -182,7 +182,7 @@ Using `io3d-lighting` component replaces the default A-Frame lighting scene and 
 
 ## tour
 
-Create a camera flythrough tour of your A-Frame scene.
+The `tour` component can be used to create a custom camera flythrough tour of your A-Frame scene.
 
 | Parameter | Description | Default value |
 | --- | --- | --- |
@@ -253,7 +253,7 @@ Here is an example with a play / pause button:
 </script>
 ```
 
-### Programmatically jumping to any waypoint
+### Programmatically jump to any waypoint
 
 If you need to offer a way to make the camera fly from the current position to a predefined waypoint, you can use the `goTo` method together with the name of the waypoint:
 
@@ -291,7 +291,7 @@ If the transition should be immediate, you can set `move: 0` to make the movemen
 
 ## gblock
 
-Loads Google Blocks glTFs models hosted on [https://vr.google.com/blocks](https://vr.google.com/blocks). The only parameter is the URL of a specific google blocks model.
+This component loads Google Blocks glTFs models hosted on [https://vr.google.com/blocks](https://vr.google.com/blocks). The only parameter is the URL of a specific google blocks model.
 
 ### Example
 ```html
